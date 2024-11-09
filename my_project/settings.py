@@ -29,9 +29,8 @@ SECRET_KEY = 'django-insecure-e12qo^+t)&s(8561jnu#2%jqvooro1ue*&hmf-(0z90*h%1_^l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '8000-cosh66-djangoproject1-my28nni1uzr.ws.codeinstitute-ide.net',
-'.herokuapp.com']
-
+ALLOWED_HOSTS = ['8000-cosh66-djangoproject1-fem9rjlsvov.ws.codeinstitute-ide.net'
+]
 
 # Application definition
 
@@ -91,6 +90,10 @@ WSGI_APPLICATION = 'my_project.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"
+]
 
 
 # Password validation
