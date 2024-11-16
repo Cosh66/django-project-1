@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path, include
 # from hello_world import views as index_views
 
+from django.contrib import admin
+from django.urls import path, include
+
 urlpatterns = [
-    # path('', index_views.index, name='index'),
-  path("", include("blog.urls"), name="blog-urls"),
     path('admin/', admin.site.urls),
+    path('', include('your_app.urls')),  # Connect to app URLs
 ]
