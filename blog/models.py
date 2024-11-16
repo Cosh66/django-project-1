@@ -10,7 +10,6 @@ class Comment(models.Model):
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    field_2 = models.IntergerField(default='Hello, World!')
-    field_3 = models.CharField(null=True)
+   
     
    
