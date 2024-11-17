@@ -11,5 +11,5 @@ class PostAdmin(SummernoteModelAdmin):
     summernote_fields = ('content',)
 
 
-    
+  
 

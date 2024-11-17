@@ -1,1 +1,34 @@
+Entries for a Django Project
+Replace the contents of your .gitignore file with this (or add to it):
+
+bash
+Copy code
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+
+# Ignore Django fixtures directory
+blog/fixtures/
+
+# Environment variables
+.env
+
+# Gitpod specific (if you're using Gitpod)
+.gitpod/
+
+# VSCode specific (if you're using VSCode)
+.vscode/
+
+# PyCharm specific (if you're using PyCharm)
+.idea/
+
+# Node.js specific (if you're using Node.js)
+node_modules/
+
  blog/fixtures/
