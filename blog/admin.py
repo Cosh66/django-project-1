@@ -4,7 +4,7 @@ from .models import Post
 
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
-    list_display = ('title', 'slug', 'status', 'created_at')
+    list_display = ('title', 'slug', 'status', 'created_on')
     search_fields = ['title']
     list_filter = ('status',)
     prepopulated_fields = {'slug': ('title',)}
