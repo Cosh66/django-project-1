@@ -30,7 +30,7 @@ SECRET_KEY =  os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['my-first-hello-world-project-30a28e76bcf2.herokuapp.com'
+ALLOWED_HOSTS = ['my-first-hello-world-project-30a28e76bcf2.herokuapp.com', '8000-cosh66-djangoproject1-kt8nnb24tp7.ws.codeinstitute-ide.net'
 ]
 
 # Application definition
@@ -94,10 +94,7 @@ WSGI_APPLICATION = 'my_project.wsgi.application'
 #}
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 CSRF_TRUSTED_ORIGINS = [
