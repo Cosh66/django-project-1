@@ -28,6 +28,56 @@ a {
     text-decoration: none;
 }
 
+img:hover {
+    transform: scale(1.1); /* Slightly increase size */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+}
+
+#about {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f4f4f4; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+/* Heading Styling */
+#about h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    #about {
+        padding: 15px;
+    }
+
+    #about h2 {
+        font-size: 1.8rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+}
+
 a:hover {
     color: #005bb5; /* Darker blue on hover */
     text-decoration: underline;
