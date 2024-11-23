@@ -23,10 +23,7 @@ def post_detail(request, slug):
         {"post": post},
     )
 
-    from django.shortcuts import render
-
-def home(request):
-    return render(request, 'blog/index.html')
+   from django.shortcuts import render
 
 def about(request):
-    return render(request, 'blog/about.html')
+    return render(request, 'blog/about.html')  
