@@ -1,0 +1,160 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+}
+
+a {
+    color: #0078d7; /* Cool blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005bb5; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    background-color: #333; /* Dark background */
+}
+
+#nav-list li {
+    margin: 0 15px; /* Space between links */
+}
+
+#nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#nav-list a:hover {
+    color: #f4a261; /* Add hover color effect */
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #444;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f4f4f4; /* Subtle background color */
+    border-bottom: 3px solid #333; /* Add definition */
+}
+
+body {
+    background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 50px 20px;
+    text-align: center; /* Center any additional content */
+    color: #555;
+}
+
+#nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: #333;
+    padding: 15px 0; /* Adjust height */
+}
+
+#nav-list li {
+    margin: 0 20px; /* Space between links */
+}
+
+#nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger font */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+#nav-list a:hover {
+    color: #f4a261; /* Highlight color */
+}
+
+main {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin: 50px 20px;
+    padding: 20px;
+    border: 2px dashed #ccc; /* Optional placeholder effect */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f4a261;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1.2rem; /* Adjust icon size */
+}
