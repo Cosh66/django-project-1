@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+    <head>
+        <title>About Us</title>
+    </head>
+    <body>
+        <header>
+            <h1>About AI Imagination</h1>
+        </header>
+        <main>
+            <section id="about">
+                <h2>Our Mission</h2>
+                <p>
+                    At <strong>AI Imagination</strong>, we believe in celebrating the creativity of artificial intelligence and the talented individuals who use it. 
+                    Our platform provides a space for artists to share their AI-generated imagery, receive feedback, and connect with a community of like-minded creators.
+                </p>
+
+                <h2>What You Can Do</h2>
+                
+                    <p>Upload and showcase your AI-generated artwork.
+                     Discover and be inspired by the amazing possibilities of AI art.
+                     Engage with the community by leaving comments on others' creations.
+                     </p>
+                   
+                
+
+                <h2>Coming Soon</h2>
+                <p>
+                    We’re working on exciting new features! Soon, you’ll be able to create your own account, manage your uploads, and interact with the community in more ways.
+                    Stay tuned as we expand our platform to make it even better for AI artists like you!
+                </p>
+
+                <!-- "Go Back to Home" Button -->
+                <p style="text-align: center; margin-top: 20px;">
+                    <a href="{% url 'home' %}" class="btn btn-primary">Go Back to Home</a>
+                </p>
+            </section>
+        </main>
+       
+    </body>
+{% endblock %}

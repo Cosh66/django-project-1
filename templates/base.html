@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html class="h-100" lang="en">
 <head>
-    <title>CodeStar Blog</title>
+    <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,8 +21,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">c<span class="red-o">o</span>de<span
-                        class="thin">|star</span></span></a>
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static 'blog/static/images/Logo.png' %}" alt="Logo" style="height: 80px; width: auto;">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,14 +31,20 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'home' %}">Home</a>
+                        <a class="nav-link {% if request.path == home_url %}active{% endif %}" href="{% url 'home' %}">Home</a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}" id="about-link">About</a>
+                    </li>
                 </ul>
-                <span class="navbar-text text-muted">
-                    adventures of a software developer
-                </span>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#register-modal">Register Here</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#upload-modal">Upload Images</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -50,7 +57,7 @@
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-white">
             {% block copyright %}
-                Made by code instituters
+               
             {% endblock copyright %}
         </p>
         <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
@@ -63,5 +70,63 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
         </script>
     <script src ="{% static 'js/script.js' %}"></script>
+
+    <div id="register-modal" class="modal fade" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="register-form" action="#" method="post">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="upload-modal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="uploadModalLabel">Upload Your Image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="image-title" class="form-label">Image Title</label>
+                            <input type="text" class="form-control" id="image-title" name="title" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="image-file" class="form-label">Choose Image</label>
+                            <input type="file" class="form-control" id="image-file" name="image" accept="image/*" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Upload</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
