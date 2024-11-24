@@ -1,7 +1,7 @@
 from django.urls import path
-from . import views  # Import views from the current app
+from . import views
 
 urlpatterns = [
-    path('', views.home, name='home'),  # Root path
-    # Add other app-specific URL patterns here
+    path('', views.home, name='home'),
+    path('about/', views.about, name='about'),
 ]
