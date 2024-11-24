@@ -23,9 +23,7 @@ def post_detail(request, slug):
         {"post": post},
     )
 
-from django.shortcuts import render  # This line must not be indented
+from django.shortcuts import render
 
-def about(request):
-    return render(request, 'blog/about.html')
 def home(request):
-    return render(request, 'blog/index.html')
+    return render(request, 'blog/home.html') 
