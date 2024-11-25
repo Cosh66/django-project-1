@@ -31,7 +31,7 @@ SECRET_KEY =  os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8080-cosh66-djangoproject1-kt8nnb24tp7.ws.codeinstitute-ide.net',
+    '8000-cosh66-djangoproject1-kt8nnb24tp7.ws.codeinstitute-ide.net',
     'my-first-hello-world-project-30a28e76bcf2.herokuapp.com'
 ]
 
