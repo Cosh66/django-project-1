@@ -28,10 +28,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY =  os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-cosh66-djangoproject1-kt8nnb24tp7.ws.codeinstitute-ide.net',
+    '8080-cosh66-djangoproject1-kt8nnb24tp7.ws.codeinstitute-ide.net',
     'my-first-hello-world-project-30a28e76bcf2.herokuapp.com'
 ]
 
@@ -44,20 +44,30 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-      'django.contrib.sites',
+    'django.contrib.sites',  # Required by django-allauth
+
+    # Third-party apps
+    'django_summernote',  # Only if you use it
+
+    # Allauth apps
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',                
-    'django_summernote',
-    # 'hello_world',
+    'allauth.socialaccount',  # Optional, for social login functionality
+
+    # Your apps
     'blog',
-    
+]
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'  # Redirect to homepage after logout
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

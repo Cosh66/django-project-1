@@ -23,62 +23,76 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body class="d-flex flex-column h-100 main-bg">
+
+<body class="d-flex flex-column h-100 main-bg"></body>
+    <!-- Include the Navigation -->
+    
+    
+    <!-- Your Page Content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="{% static 'images/Logo.png' %}" alt="Creative Star Logo" style="height: 50px;">
+                <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                href="{% url 'account_signup' %}">Register</a>
             </a>
+           
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ms-auto">
-                    {% if user.is_authenticated %}
-<li class="nav-item">
-	<a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
-</li>
-{% else %}
-<li class="nav-item">
-	<a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-		href="{% url 'account_signup' %}">Register</a>
-</li>
-<li class="nav-item">
-	<a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
-</li>
-{% endif %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#upload-modal">Upload Images</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto">
-                    {% if user.is_authenticated %}
-                        <li class="nav-item">
-                           
-                        </li>
-                    {% else %}
-                        <li class="nav-item">
-                            
-                        </li>
-                        <li class="nav-item">
-                            
-                        </li>
-                    {% endif %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#upload-modal">Upload Images</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+            
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <!-- Logo and Brand -->
+                    <a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}">
+                        <img src="{% static 'images/logo.png' %}" alt="Creative Star Logo" style="height: 50px; width: auto;">
+                        <span class="ms-2">Creative Star</span> <!-- Adds spacing between logo and brand text -->
+                    </a>
+            
+                    <!-- Toggler for Mobile View -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <!-- Navigation Links -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            {% if user.is_authenticated %}
+                                <!-- Links for Logged-In Users -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                                </li>
+                            {% else %}
+                                <!-- Links for Guests -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                                </li>
+                            {% endif %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#upload-modal">Upload Images</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
     <!-- Main Content -->
     <main class="flex-shrink-0 main-bg">
-        {% block content %}
+        
         <!-- Page-specific content will be inserted here -->
-        {% endblock content %}
+        
     </main>
 
     <!-- Footer -->
@@ -161,6 +175,7 @@
             </div>
         </div>
     </div>
+  
 
 </body>
 </html>
