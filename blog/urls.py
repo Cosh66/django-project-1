@@ -2,6 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.home, name="home"),  # Replace 'home' with the name of your actual view function
+    path("", views.home, name="home"), 
 ]
 

@@ -27,11 +27,11 @@ body {
 }
 
 .navbar-brand img {
-    height: 80px; /* Adjust the size as needed */
-    width: auto;  /* Keep proportions */
-    border: 2px solid #ccc; /* Subtle gray border */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    height: 80px; /
+    width: auto;  /
+    border: 2px solid #ccc; /
+    border-radius: 8px; /
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /
 }
 
 .navbar-brand .red-o {
