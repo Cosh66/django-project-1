@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY =  os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-cosh66-djangoproject1-kt8nnb24tp7.ws.codeinstitute-ide.net',
@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'django_summernote',
     # 'hello_world',
     'blog',
-    'about',
+    
 ]
 
 
