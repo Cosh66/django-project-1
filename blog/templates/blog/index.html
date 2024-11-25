@@ -1,5 +1,4 @@
-{% extends "base.html" %}
-{% block content %}
+{% load static %}
 
 <head></head>
     <meta charset="UTF-8">
@@ -15,11 +14,20 @@
 
 <body>
     <!-- Header Section -->
-    <header>
+    <header class="container text-center my-5">
         <h1>Welcome To Your AI Imagination</h1>
-        <img src="{% static 'images/Home Page.png' %}" alt="An inspiring image" style="width: 100%; max-width: 600px;">
-        
+        <div class="gallery">
+            <img src="{% static 'images/Home Page.png' %}" alt="Home Page"> 
+            
+            
+            <!-- Add more images here -->
+        </div>
+
     </header>
+
+    <main class="container my-5 text-center">
+        <p class="lead">Explore the limitless possibilities of AI imagination. Get started today!</p>
+    </main>
 </body>
 
 <main></main>
