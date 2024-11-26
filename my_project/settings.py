@@ -90,8 +90,8 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')  # Define the path for globa
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],  # Add TEMPLATES_DIR here
-        'APP_DIRS': True,
+        'DIRS': [BASE_DIR / "templates"],  # Root-level templates folder
+        'APP_DIRS': True,  # Allows app-specific templates
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -163,8 +163,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = [BASE_DIR / "static"]  # Global static folder
 
 
 

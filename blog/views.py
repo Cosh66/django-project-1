@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from django.views import generic
 from .models import Post
 
@@ -23,10 +23,7 @@ def post_detail(request, slug):
 
 # Function-based view for the homepage
 def home(request):
-    """
-    Renders the homepage.
-    """
-    return render(request, "blog/home.html")
+    return render(request, 'blog/index.html')  # Correct path for index.html
 
 
 # Function-based view for the about page

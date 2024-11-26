@@ -1,77 +1,24 @@
+{% extends "base.html" %}
 {% load static %}
 
-<head></head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    
-    <title>AI Imagination</title>
-</head>
+{% block content %}
+<!-- Header Section -->
+<header class="container text-center my-5">
+    <h1>Welcome to Creative Star</h1>
+    <p class="lead">Discover and share your AI-generated creations!</p>
+    <div class="gallery mt-4">
+        <!-- Hero Image -->
+        <img src="{% static 'images/home_page.png' %}" alt="Home Page" class="img-fluid rounded">
+    </div>
+    <div class="mt-4">
+        <!-- Call-to-Action Button -->
+        <a href="/upload/" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+</header>
 
-
-
-<body>
-    <!-- Header Section -->
-    <header class="container text-center my-5">
-        <h1>Welcome to Creative Star</h1>
-        <p class="lead">This is your homepage. Explore and upload your creations!</p>
-        <div class="gallery mt-4">
-            <img src="{% static 'blog/static/images/home_page.png' %}" alt="Home Page" class="img-fluid">
-        </div>
-    </header>
-
-    <main class="container my-5 text-center">
-        <p class="lead">Explore the limitless possibilities of AI imagination. Get started today!</p>
-    </main>
-</body>
-
-
-
-
-
-
-
+<!-- Main Section -->
+<main class="container my-5 text-center">
+    <p class="lead">Explore the limitless possibilities of AI imagination. Get started today!</p>
+</main>
 {% endblock %}
 
-
-
-<div class="container-fluid">
-    <h1 class="text-center mt-4">Welcome to My Blog</h1>
-    <div class="row mt-5">
-        {% for post in post_list %}
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h2 class="card-title">
-                        <a href="{% url 'post_detail' post.slug %}" class="text-decoration-none">
-                            {{ post.title }}
-                        </a>
-                    </h2>
-                    <p class="card-text text-muted">Author: {{ post.author }}</p>
-                    <p class="card-text">{{ post.excerpt }}</p>
-                    <p class="card-text text-muted">Published on: {{ post.created_on|date:"F j, Y" }}</p>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-
-    {% if is_paginated %}
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-            {% if page_obj.has_previous %}
-            <li class="page-item">
-                <a href="?page={{ page_obj.previous_page_number }}" class="page-link">Previous</a>
-            </li>
-            {% endif %}
-            {% if page_obj.has_next %}
-            <li class="page-item">
-                <a href="?page={{ page_obj.next_page_number }}" class="page-link">Next</a>
-            </li>
-            {% endif %}
-        </ul>
-    </nav>
-    {% endif %}
-</div>
