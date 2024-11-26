@@ -56,6 +56,7 @@ INSTALLED_APPS = [
 
     # Your apps
     'blog',
+    'widget_tweaks',
 ]
 
 AUTHENTICATION_BACKENDS = [
@@ -172,6 +173,4 @@ STATICFILES_DIRS = [BASE_DIR / "static"]  # Global static folder
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ACCOUNT_FORMS = {
-    'signup': 'blog.signup.html'
-}
+
