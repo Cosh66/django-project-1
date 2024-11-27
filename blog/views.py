@@ -23,7 +23,7 @@ def post_detail(request, slug):
 
 # Function-based view for the homepage
 def home(request):
-    return render(request, 'home.html')  # Correct path for index.html
+    return render(request, 'blog/index.html') 
 
 
 # Function-based view for the about page

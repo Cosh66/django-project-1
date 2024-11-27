@@ -103,6 +103,7 @@ TEMPLATES = [
         },
     },
 ]
+
 WSGI_APPLICATION = 'my_project.wsgi.application'
 
 

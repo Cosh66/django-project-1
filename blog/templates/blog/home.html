@@ -1,12 +1,19 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
 
 {% block content %}
-<h1>Welcome to Creative Star</h1>
-<p>This is your homepage. Explore and upload your creations!</p>
+<h1>Welcome to the Home Page</h1>
+<p>This is the home page for your blog application.</p>
+{% endblock %}
 
-<div class="about-section">
-    <h2>About Creative Star</h2>
-    <p>Creative Star is a platform where users can upload their AI-generated imagery and connect with other creatives. Join us to explore and share your creations!</p>
-    <a href="#" class="btn">Learn More</a>
+{% block content %}
+<div class="hero">
+    <img src="{% static 'images/home_page.png' %}" alt="Hero Image" class="hero-image">
+    <div class="hero-text">
+        <h1>Welcome to Creative Star</h1>
+        <p>Discover and share your AI-generated creations.</p>
+        <a href="/about/" class="btn">Learn More</a>
+    </div>
 </div>
 {% endblock %}
