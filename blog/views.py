@@ -28,11 +28,11 @@ def home(request):
 
 # Function-based view for the about page
 def about(request):
-    """
-    Renders the about page.
-    """
-    return render(request, "blog/about.html")
+    return render(request, 'blog/about.html')
 
 def upload(request):
     return render(request, 'blog/upload.html')
+
+def index(request):
+    return render(request, 'blog/index.html')    
 

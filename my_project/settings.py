@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY =  os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-cosh66-djangoproject1-kt8nnb24tp7.ws.codeinstitute-ide.net',
@@ -44,10 +44,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'django.contrib.sites',  # Required by django-allauth
 
     # Third-party apps
-    'django_summernote',  # Only if you use it
+    'django_summernote',
+    'cloudinary', 
+      
 
     # Allauth apps
     'allauth',
@@ -68,7 +71,7 @@ AUTHENTICATION_BACKENDS = [
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'  # Redirect to homepage after logout
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

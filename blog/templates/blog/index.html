@@ -2,24 +2,41 @@
 {% load static %}
 
 {% block content %}
-<!-- Header Section -->
-<header class="container text-center my-5">
-    <h1>Welcome to Creative Star</h1>
-    <p class="lead">Discover and share your AI-generated creations!</p>
-    <div class="gallery mt-4">
-        <!-- Hero Image -->
-        <img src="{% static 'images/home_page.png' %}" alt="Home Page" class="img-fluid rounded">
-    </div>
-    <div class="mt-4">
-        <!-- Call-to-Action Button -->
-     
-</header>
+    <!-- Header Section -->
+    <header class="container text-center my-5">
+        <ul class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+        </ul>
+        <h1>Welcome to Creative Star</h1>
+        <p class="lead">Discover and share your AI-generated creations!</p>
+        <div class="gallery mt-4">
+            <!-- Hero Image -->
+            <img src="{% static 'images/home_page.png' %}" alt="Home Page" class="img-fluid rounded">
+        </div>
+        <div class="mt-4"></div>
+    </header>
 
-
-
-<!-- Main Section -->
-<main class="container my-5 text-center">
-    <p class="lead">Explore the limitless possibilities of AI imagination. Get started today!</p>
-</main>
+    <!-- Main Section -->
+    <main class="container my-5">
+        <div class="row">
+            {% for post in post_list %}
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="image-container">
+                            {% if post.featured_image %}
+                                <img class="card-img-top" src="{{ post.featured_image.url }}" alt="{{ post.title }}">
+                            {% else %}
+                                <img class="card-img-top" src="{% static 'images/default.jpg' %}" alt="Placeholder image">
+                            {% endif %}
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.excerpt }}</p>
+                            <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
 {% endblock %}
-
