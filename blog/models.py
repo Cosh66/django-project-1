@@ -4,50 +4,65 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
-# Create your models here.
+# Blog Post Model
 class Post(models.Model):
-    title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    title = models.CharField(max_length=200, unique=True)  # Title of the post
+    slug = models.SlugField(max_length=200, unique=True)  # Slug for the URL
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="blog_posts"
+        User, on_delete=models.CASCADE, related_name="blog_posts"  # Link to user
     )
-    featured_image = CloudinaryField('image', default='placeholder')
-    content = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    updated_on = models.DateTimeField(auto_now=True)
-    status = models.IntegerField(choices=STATUS, default=0)
-    excerpt = models.TextField(blank=True)
+    featured_image = CloudinaryField('image', default='placeholder')  # Cloudinary image
+    content = models.TextField()  # Post content
+    created_on = models.DateTimeField(auto_now_add=True)  # Timestamp for creation
+    updated_on = models.DateTimeField(auto_now=True)  # Timestamp for updates
+    status = models.IntegerField(choices=STATUS, default=0)  # Draft or Published
+    excerpt = models.TextField(blank=True)  # Short preview text
 
     class Meta:
-        ordering = ["-created_on"]
+        ordering = ["-created_on"]  # Order by most recent posts
 
     def __str__(self):
         return f"{self.title} | written by {self.author}"
 
+
+# Image Model (This appears redundant with UploadedImage)
 class Image(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    title = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='uploads/')
-    created_at = models.DateTimeField(auto_now_add=True)
-
-
-
-class Comment(models.Model):
-    post = models.ForeignKey(
-        Post, on_delete=models.CASCADE, related_name="comments"
-    )
-    author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="commenter"
-    )
-    body = models.TextField()
-    approved = models.BooleanField(default=False)
-    created_on = models.DateTimeField(auto_now_add=True)
-
-    class Meta:  # Corrected to uppercase 'M'
-        ordering = ["created_on"]
+    user = models.ForeignKey(User, on_delete=models.CASCADE)  # Link to user
+    title = models.CharField(max_length=100)  # Title for the image
+    image = models.ImageField(upload_to='uploads/')  # Upload path
+    created_at = models.DateTimeField(auto_now_add=True)  # Timestamp for creation
 
     def __str__(self):
-        return f"{self.body} | by {self.author}"
+        return self.title  # Display title in admin
+
+
+# Comment Model
+class Comment(models.Model):
+    post = models.ForeignKey(
+        Post, on_delete=models.CASCADE, related_name="comments"  # Link to post
+    )
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="commenter"  # Link to user
+    )
+    body = models.TextField()  # Comment content
+    approved = models.BooleanField(default=False)  # Moderation status
+    created_on = models.DateTimeField(auto_now_add=True)  # Timestamp for creation
+
+    def __str__(self):
+        return f"{self.body[:20]}... by {self.author}"  # Truncated display in admin
+
+
+# UploadedImage Model
+class UploadedImage(models.Model):
+    title = models.CharField(max_length=255)  # Title for the image
+    image = CloudinaryField('image')  # Cloudinary field for image storage
+    uploaded_at = models.DateTimeField(auto_now_add=True)  # Timestamp for upload
+
+    class Meta:
+        ordering = ["-uploaded_at"]  # Order by most recent uploads
+
+    def __str__(self):
+        return self.title  # Display title in admin
 
 
     
