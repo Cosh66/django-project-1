@@ -16,6 +16,15 @@
         <div class="mt-4"></div>
     </header>
 
+    <!-- Dynamic Image Grid -->
+    <section class="container my-5">
+        <div class="image-grid">
+            {% for image in images %}
+                <img src="{{ image.image.url }}" alt="{{ image.title }}" class="img-fluid">
+            {% endfor %}
+        </div>
+    </section>
+
     <!-- Main Section -->
     <main class="container my-5">
         <div class="row">
