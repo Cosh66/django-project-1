@@ -51,7 +51,7 @@ class UploadedImage(models.Model):
         ordering = ["-uploaded_at"]  # Order by most recent uploads
 
     def __str__(self):
-        return self.title  # Display title in admin
+        return self.title
 
 
     

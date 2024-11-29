@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
-from .models import Post, UploadedImage
-from .forms import UploadedImageForm  # Ensure this is added if you created forms.py
+from .models import Post, UploadedImage  # Ensure Post and UploadedImage are imported
+from .forms import UploadedImageForm  
 
 # Class-based view for the list of posts
 class PostList(generic.ListView):

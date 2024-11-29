@@ -1,34 +1,39 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
 {% block content %}
+<header>
+    <h1>About Creative Star</h1>
+</header>
+<main>
+    <section id="About">
+        <h2>Our Mission</h2>
+        <p>
+            At <strong>Creative Star</strong>, we believe in celebrating the creativity of artificial intelligence and the talented individuals who use it. 
+            Our platform provides a space for artists to share their AI-generated imagery, receive feedback, and connect with a community of like-minded creators.
+        </p>
 
-    <header>
-        <h1>About Creative Star</h1>
-    </header>
-    <main>
-        <section id="About">
-            <h2>Our Mission</h2>
-            <p>
-                At <strong>Creative Star</strong>, we believe in celebrating the creativity of artificial intelligence and the talented individuals who use it. 
-                Our platform provides a space for artists to share their AI-generated imagery, receive feedback, and connect with a community of like-minded creators.
-            </p>
+        <h2>What You Can Do</h2>
+        <ul>
+            <li>Upload and showcase your AI-generated artwork.</li>
+            <li>Discover and be inspired by the amazing possibilities of AI art.</li>
+            <li>Engage with the community by leaving comments on others' creations.</li>
+        </ul>
 
-            <h2>What You Can Do</h2>
-            <p>
-                - Upload and showcase your AI-generated artwork.<br>
-                - Discover and be inspired by the amazing possibilities of AI art.<br>
-                - Engage with the community by leaving comments on others' creations.
-            </p>
+        <h2>Coming Soon</h2>
+        <p>
+            We’re working on exciting new features! Soon, you’ll be able to create your own account, manage your uploads, and interact with the community in more ways.
+            Stay tuned as we expand our platform to make it even better for AI artists like you!
+        </p>
+    </section>
 
-            <h2>Coming Soon</h2>
-            <p>
-                We’re working on exciting new features! Soon, you’ll be able to create your own account, manage your uploads, and interact with the community in more ways.
-                Stay tuned as we expand our platform to make it even better for AI artists like you!
-            </p>
-
-            <!-- "Go Back to Home" Button -->
-            <p style="text-align: center; margin-top: 20px;">
-                <a href="{% url 'home' %}" class="btn btn-primary">Go Back to Home</a>
-            </p>
-        </section>
-    </main>
+    <!-- "Go Back to Home" Button -->
+    <p style="text-align: center; margin-top: 20px;">
+        <a href="{% url 'index' %}" class="btn btn-primary">Go Back to Home</a>
+    </p>
+</main>
 {% endblock %}
