@@ -25,17 +25,6 @@ class Post(models.Model):
         return f"{self.title} | written by {self.author}"
 
 
-# Image Model (This appears redundant with UploadedImage)
-class Image(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)  # Link to user
-    title = models.CharField(max_length=100)  # Title for the image
-    image = models.ImageField(upload_to='uploads/')  # Upload path
-    created_at = models.DateTimeField(auto_now_add=True)  # Timestamp for creation
-
-    def __str__(self):
-        return self.title  # Display title in admin
-
-
 # Comment Model
 class Comment(models.Model):
     post = models.ForeignKey(
