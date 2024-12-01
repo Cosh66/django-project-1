@@ -134,8 +134,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# Directory for static files during development
-STATICFILES_DIRS = [BASE_DIR / "static"]
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 # Directory where static files will be collected for deployment
 STATIC_ROOT = BASE_DIR / "staticfiles"

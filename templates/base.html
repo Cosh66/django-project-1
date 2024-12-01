@@ -9,13 +9,18 @@
     <title>{% block title %}Creative Star{% endblock %}</title>
 
     <!-- Global CSS (applies to all pages) -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
 
     <!-- Page-specific CSS (for individual pages like About) -->
     {% block extra_css %}
     {% endblock %}
 </head>
 <body>
+
+ 
+
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -42,6 +47,7 @@
             </div>
         </nav>
     </header>
+    </body>
 
     <main>
         {% block content %}
