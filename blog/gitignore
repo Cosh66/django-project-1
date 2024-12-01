@@ -32,3 +32,5 @@ blog/fixtures/
 node_modules/
 
  blog/fixtures/
+
+ env.py

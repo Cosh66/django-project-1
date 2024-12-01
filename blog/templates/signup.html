@@ -1,13 +1,21 @@
 {% extends "base.html" %}
 
+{% load static %}  <!-- Load static files -->
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+{% endblock %}
+
 {% block content %}
-<div class="signup-form">
-    <h1>Sign Up</h1>
-    <p>Already have an account? Then please <a href="{% url 'account_login' %}">sign in</a>.</p>
-    <form method="post" id="signup_form">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Sign Up</button>
-    </form>
+<div class="signup-form-container">
+    <div class="signup-form">
+        <h1>Sign Up</h1>
+        <p>Already have an account? <a href="{% url 'account_login' %}">Sign in here</a>.</p>
+        <form method="post" id="signup_form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+    </div>
 </div>
 {% endblock %}

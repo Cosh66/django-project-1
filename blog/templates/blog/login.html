@@ -1,18 +1,20 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
 {% block content %}
-<div class="container d-flex justify-content-center align-items-center min-vh-100">
-    <div class="card shadow p-4" style="width: 100%; max-width: 400px;">
-        <h2 class="text-center mb-4">Log In</h2>
-        <form method="post">
+<div class="login-container">
+    <div class="login-card">
+        <h2 class="text-center">Log In</h2>
+        <form method="post" class="login-form">
             {% csrf_token %}
             {{ form.as_p }}
-            <div class="d-grid">
-                <button type="submit" class="btn btn-primary">Log In</button>
-            </div>
+            <button type="submit" class="btn btn-primary btn-block">Log In</button>
         </form>
-        <div class="text-center mt-3">
+        <div class="login-links">
             <p>Don't have an account? <a href="{% url 'account_signup' %}">Sign up</a></p>
             <p><a href="{% url 'account_reset_password' %}">Forgot Password?</a></p>
         </div>

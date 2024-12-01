@@ -41,11 +41,11 @@ class Comment(models.Model):
         return f"{self.body[:20]}... by {self.author}"  # Truncated display in admin
 
 
-# UploadedImage Model
+# Image Upload Model (Consolidated and Updated)
 class UploadedImage(models.Model):
-    title = models.CharField(max_length=255)  # Title for the image
-    image = CloudinaryField('image')  # Cloudinary field for image storage
-    uploaded_at = models.DateTimeField(auto_now_add=True)  # Timestamp for upload
+    title = models.CharField(max_length=255)  # Title field for the image
+    image = CloudinaryField('image')  # CloudinaryField for storing images
+    uploaded_at = models.DateTimeField(auto_now_add=True)  # Timestamp for the upload
 
     class Meta:
         ordering = ["-uploaded_at"]  # Order by most recent uploads
