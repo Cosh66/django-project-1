@@ -7,6 +7,7 @@ urlpatterns = [
     path('upload/', views.upload_image, name='upload_image'),
     path('gallery/', views.image_gallery, name='image_gallery'),
     path('<slug:slug>/', views.post_detail, name='post_detail'),
+    path('upload/', views.upload_page, name='upload_page'),
 ]
 
 

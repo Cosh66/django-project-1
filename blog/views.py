@@ -3,6 +3,7 @@ from django.views import generic
 from .models import Post, UploadedImage
 from .forms import UploadedImageForm
 
+
 # Home page and list of posts
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)  # Only show published posts
@@ -33,4 +34,8 @@ def upload_image(request):
 def image_gallery(request):
     images = UploadedImage.objects.all().order_by('-uploaded_at')  # Most recent uploads first
     return render(request, 'blog/image_gallery.html', {'images': images})
+
+def upload_page(request):
+    # Pass any data to the template here if necessary
+    return render(request, 'upload.html')   
 

@@ -1,9 +1,53 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Images</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="Logo">
+            </div>
+            <nav>
+                <a href="/upload/">Upload Images</a>
+                <a href="/logout/">Log Out</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="image-card">
+                <img src="{% static 'images/sample1.jpg' %}" alt="Image 1">
+                <div class="comments">
+                    <h3>Comments</h3>
+                    <textarea placeholder="Add your comment..."></textarea>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="{% static 'images/sample2.jpg' %}" alt="Image 2">
+                <div class="comments">
+                    <h3>Comments</h3>
+                    <textarea placeholder="Add your comment..."></textarea>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="{% static 'images/sample3.jpg' %}" alt="Image 3">
+                <div class="comments">
+                    <h3>Comments</h3>
+                    <textarea placeholder="Add your comment..."></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Creative Star. All rights reserved.</p>
+    </footer>
+</body>
+</html>
 
