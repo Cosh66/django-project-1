@@ -1,133 +1,149 @@
-{% extends "account/base.html" %}
-
-{% load i18n %}
-
-{% block head_title %}{% trans "Signup" %}{% endblock head_title %}
-
-{% block content %}
-<h1>{% trans "Sign Up" %}</h1>
-
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
-
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
-
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
     
-        body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                
+            </div>
+            <nav>
+                <a href="/login/">Sign In</a>
+                <a href="/signup/">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <style>
+    
+      body {
+font-family: Arial, sans-serif;
+background-color: #f8f9fa;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
 }
 
 /* Login Page Container */
 .login-page {
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
+width: 100%;
+max-width: 600px;
+padding: 20px;
 }
 
 .login-container {
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
+background: white;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center;
 }
 
 h1 {
-  margin-bottom: 15px;
-  font-size: 24px;
+margin-bottom: 15px;
+font-size: 24px;
 }
 
 p {
-  font-size: 14px;
-  margin-bottom: 20px;
+font-size: 14px;
+margin-bottom: 20px;
 }
 
 a {
-  color: #007bff;
-  text-decoration: none;
+color: #007bff;
+text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 /* Form Styling */
 .form-group {
-  text-align: left;
-  margin-bottom: 15px;
+text-align: left;
+margin-bottom: 15px;
 }
 
 label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  font-size: 14px;
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+font-size: 14px;
 }
 
 input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 14px;
 }
 
 .checkbox label {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
+display: flex;
+align-items: center;
+font-size: 14px;
 }
 
 .checkbox input {
-  margin-right: 5px;
+margin-right: 5px;
 }
 
 /* Form Actions */
 .form-actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 20px;
 }
 
 .forgot-password {
-  font-size: 14px;
+font-size: 14px;
 }
 
 .btn-primary {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
+background-color: #007bff;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 14px;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+background-color: #0056b3;
 }
 
 /* Footer */
 footer {
-  margin-top: 20px;
-  font-size: 12px;
-  color: #666;
+margin-top: 20px;
+font-size: 12px;
+color: #666;
 }
 </style>
 
-{% endblock content %}
+    <main>
+        <div class="signup-container">
+            <h2>Create an Account</h2>
+            <form method="POST" action="{% url 'signup' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn-primary">Sign Up</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Creative Star. All rights reserved.</p>
+    </footer>
+</body>
+</html>

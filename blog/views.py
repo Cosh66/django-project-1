@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from .models import Post, UploadedImage
 from .forms import UploadedImageForm
+from django.contrib.auth.forms import UserCreationForm
+
 
 
 # Home page and list of posts
@@ -37,5 +39,16 @@ def image_gallery(request):
 
 def upload_page(request):
     # Pass any data to the template here if necessary
-    return render(request, 'upload.html')   
+    return render(request, 'upload.html')  
+
+def signup(request):
+    if request.method == "POST":
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/upload/')  # Redirect to the upload page
+
+    else:
+        form = UserCreationForm()
+    return render(request, 'signup.html', {'form': form})     
 
