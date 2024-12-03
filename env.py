@@ -14,7 +14,7 @@ os.environ.setdefault(
 # Cloudinary URL
 os.environ.setdefault(
     "CLOUDINARY_URL",
-    "cloudinary://554926815372758:-vu1moh_2pCPGHU5tSlwvHqKAp4@Cosh66"
+    "cloudinary://486843237889555:Inv14d3b7cNt1noeSm_zQB6pl2I@dpj5ircwd"
 )
 
 # Ignore environment files

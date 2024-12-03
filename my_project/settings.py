@@ -143,9 +143,9 @@ MEDIA_URL = '/media/'
 
 # Cloudinary Configuration
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': "Cosh66",
-    'API_KEY': "554926815372758",
-    'API_SECRET': "-vu1moh_2pCPGHU5tSlwvHqKAp4",
+    'CLOUD_NAME': "dpj5ircwd",
+    'API_KEY': "486843237889555",
+    'API_SECRET': "Inv14d3b7cNt1noeSm_zQB6pl2I",
 }
 
 # Default primary key field type

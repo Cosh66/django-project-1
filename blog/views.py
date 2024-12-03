@@ -3,7 +3,7 @@ from django.views import generic
 from .models import Post, UploadedImage
 from .forms import UploadedImageForm
 from django.contrib.auth.forms import UserCreationForm
-
+from django.contrib.auth import login
 
 
 # Home page and list of posts
