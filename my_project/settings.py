@@ -65,9 +65,8 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
-LOGIN_REDIRECT_URL = '/upload/'
+LOGIN_REDIRECT_URL = '/gallery/'  # Redirect to the gallery page after login
+LOGOUT_REDIRECT_URL = '/'  # Redirect to the homepage after logout
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -86,8 +85,8 @@ ROOT_URLCONF = 'my_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates"],  # Root-level templates folder
-        'APP_DIRS': True,  # Allows app-specific templates
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # Ensure the 'templates' directory is included
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -123,6 +122,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
+# Authentication Redirect URLs
+LOGIN_REDIRECT_URL = '/gallery/'  # Redirects to the image gallery after login
+LOGOUT_REDIRECT_URL = '/'  # Redirects to the homepage after logout
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 LANGUAGE_CODE = 'en-us'
@@ -140,6 +144,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Media files (user-uploaded files) configuration
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Cloudinary Configuration
 CLOUDINARY_STORAGE = {

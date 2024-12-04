@@ -1,10 +1,11 @@
 from django import forms
-from .models import UploadedImage  # Ensure this model exists in models.py
+from .models import Comment, UploadedImage
+
 
 class UploadedImageForm(forms.ModelForm):
     class Meta:
-        model = UploadedImage  # Reference the UploadedImage model
-        fields = ['title', 'image']  # Fields to include in the form
+        model = UploadedImage
+        fields = ['title', 'image']
         widgets = {
             'title': forms.TextInput(attrs={
                 'class': 'form-control',
@@ -32,3 +33,16 @@ class UploadedImageForm(forms.ModelForm):
             )
 
         return image
+
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ['body']  # Ensure 'body' exists in the Comment model
+        widgets = {
+            'body': forms.Textarea(attrs={
+                'placeholder': 'Write your comment here...',
+                'rows': 3,
+                'class': 'form-control',
+            }),
+        }

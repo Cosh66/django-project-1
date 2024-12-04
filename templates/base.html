@@ -7,19 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>{% block title %}Creative Star{% endblock %}</title>
 
-    <!-- Global CSS (applies to all pages) -->
-    {% load static %}
+    <!-- Global CSS -->
     <link rel="stylesheet" href="{% static 'css/about.css' %}">
 
-    <!-- Page-specific CSS (for individual pages like About) -->
     {% block extra_css %}
     {% endblock %}
 </head>
-<body>
-
- 
-
-
+<body class="d-flex flex-column min-vh-100">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -30,38 +24,39 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                        <a class="nav-link" href="{% url 'about' %}">About</a>      
+                            <a class="nav-link" href="{% url 'about' %}">About</a>
                         </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-                        </li>
+                        {% if user.is_authenticated %}
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'upload_image' %}">Upload Images</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
                             <a class="nav-link" href="{% url 'account_login' %}">Log In</a>
                         </li>
-                        
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
                         </li>
-                        
+                        {% endif %}
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    </body>
 
-    <main>
+    <main class="container mt-4">
         {% block content %}
         <!-- This is where individual pages will inject their content -->
         {% endblock %}
     </main>
 
-    <footer>
-        <p>&copy; 2024 Creative Star. All rights reserved.</p>
+    <footer class="text-center py-3 bg-light mt-auto">
+        <div class="container">
+            &copy; 2024 Creative Star. All rights reserved.
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
