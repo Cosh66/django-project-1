@@ -126,6 +126,16 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 LOGIN_REDIRECT_URL = '/gallery/'  # Redirects to the image gallery after login
 LOGOUT_REDIRECT_URL = '/'  # Redirects to the homepage after logout
 
+# Messaging Framework Configuration
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'debug',
+    messages.INFO: 'info',
+    messages.SUCCESS: 'success',
+    messages.WARNING: 'warning',
+    messages.ERROR: 'error',
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
@@ -143,6 +153,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Media files (user-uploaded files) configuration
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
@@ -153,8 +164,6 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': "Inv14d3b7cNt1noeSm_zQB6pl2I",
 }
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 

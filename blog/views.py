@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from django.views import generic
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import login
-from .models import Post, UploadedImage, Comment
+from .models import UploadedImage, Post, Comment
 from .forms import UploadedImageForm, CommentForm
 
 
@@ -25,12 +25,16 @@ def about(request):
 
 
 # Upload images
+@login_required
 def upload_image(request):
     if request.method == "POST":
         form = UploadedImageForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
-            return redirect('image_gallery')  # Redirect to the gallery after upload
+            uploaded_image = form.save(commit=False)
+            uploaded_image.author = request.user
+            uploaded_image.save()
+            messages.success(request, f"Image uploaded successfully by {request.user.username}.")
+            return redirect('image_gallery')
     else:
         form = UploadedImageForm()
     return render(request, 'blog/upload_image.html', {'form': form})
@@ -38,8 +42,7 @@ def upload_image(request):
 
 # Image gallery
 def image_gallery(request):
-    images = UploadedImage.objects.all().order_by('-uploaded_at')  # Fetch all images
-
+    images = UploadedImage.objects.all().order_by('-uploaded_at')
     if request.method == "POST":
         form = CommentForm(request.POST)
         if form.is_valid():
@@ -47,30 +50,12 @@ def image_gallery(request):
             image = get_object_or_404(UploadedImage, id=image_id)
             comment = form.save(commit=False)
             comment.image = image
-            comment.author = request.user  # Set the author to the logged-in user
+            comment.author = request.user  # Assign the logged-in user as the comment author
             comment.save()
-            return redirect('image_gallery')  # Reload the page after comment submission
+            messages.success(request, f"Comment added successfully by {request.user.username}.")
+            return redirect('image_gallery')
     else:
         form = CommentForm()
-
     return render(request, 'blog/image_gallery.html', {'images': images, 'form': form})
 
-
-# Upload page (optional, if needed separately)
-def upload_page(request):
-    return render(request, 'upload.html')
-
-
-# User signup
-def signup(request):
-    if request.method == "POST":
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            login(request, user)  # Log in the user after signup
-            return redirect('image_gallery')  # Redirect to the gallery
-    else:
-        form = UserCreationForm()
-
-    return render(request, 'signup.html', {'form': form}) 
 

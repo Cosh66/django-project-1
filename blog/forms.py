@@ -1,6 +1,10 @@
 from django import forms
 from .models import Comment, UploadedImage
 
+# Constants for validation
+MAX_FILE_SIZE = 5 * 1024 * 1024  # 5MB
+VALID_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/gif']
+
 
 class UploadedImageForm(forms.ModelForm):
     class Meta:
@@ -22,15 +26,12 @@ class UploadedImageForm(forms.ModelForm):
         image = self.cleaned_data.get('image')
 
         # Check for file size (limit: 5MB)
-        if image and image.size > 5 * 1024 * 1024:  # 5MB in bytes
-            raise forms.ValidationError("The maximum file size allowed is 5MB.")
+        if image and image.size > MAX_FILE_SIZE:
+            raise forms.ValidationError("File size exceeds the 5MB limit. Please upload a smaller image.")
 
         # Check for allowed image types
-        valid_image_types = ['image/jpeg', 'image/png', 'image/gif']
-        if image and image.content_type not in valid_image_types:
-            raise forms.ValidationError(
-                "Only JPEG, PNG, and GIF image formats are supported."
-            )
+        if image and image.content_type not in VALID_IMAGE_TYPES:
+            raise forms.ValidationError("Invalid file format. Please upload an image in JPEG, PNG, or GIF format.")
 
         return image
 
@@ -38,7 +39,7 @@ class UploadedImageForm(forms.ModelForm):
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = ['body']  # Ensure 'body' exists in the Comment model
+        fields = ['body']
         widgets = {
             'body': forms.Textarea(attrs={
                 'placeholder': 'Write your comment here...',
@@ -46,3 +47,9 @@ class CommentForm(forms.ModelForm):
                 'class': 'form-control',
             }),
         }
+
+    def clean_body(self):
+        body = self.cleaned_data.get('body')
+        if not body or len(body.strip()) < 5:
+            raise forms.ValidationError("Comments must be at least 5 characters long.")
+        return body

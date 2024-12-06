@@ -5,7 +5,6 @@
     <!-- Header Section -->
     <header class="container text-center my-5">
         <ul class="nav-item">
-          
         </ul>
         <h1>Welcome to Creative Star</h1>
         <p class="lead">Discover and share your AI-generated creations!</p>
@@ -16,16 +15,30 @@
         <div class="mt-4"></div>
     </header>
 
-    <!-- Dynamic Image Grid -->
-    <section class="container my-5">
-        <div class="image-grid">
-            {% for image in images %}
-                <img src="{{ image.image.url }}" alt="{{ image.title }}" class="img-fluid">
-            {% endfor %}
+    <!-- Static Gallery Section -->
+    <section class="container my-5 gallery-container">
+        <div class="gallery-row">
+            <img src="{% static 'images/pizza-cat.jpg' %}" alt="Pizza Cat" class="gallery-image">
+            <div class="comment-section">
+                <p>Uploaded by: Lewis12345 on Dec. 5, 2024</p>
+                <p>Comments: Sorry colourful puddy cat</p>
+                <textarea placeholder="Write your comment here..."></textarea>
+                <button>Submit Comment</button>
+            </div>
+        </div>
+        
+        <div class="gallery-row">
+            <img src="{% static 'images/dragon.jpg' %}" alt="Dragon" class="gallery-image">
+            <div class="comment-section">
+                <p>Uploaded by: Lewis12345 on Dec. 5, 2024</p>
+                <p>Comments: No comments yet. Be the first to comment!</p>
+                <textarea placeholder="Write your comment here..."></textarea>
+                <button>Submit Comment</button>
+            </div>
         </div>
     </section>
 
-    <!-- Main Section -->
+    <!-- Dynamic Post List Section -->
     <main class="container my-5">
         <div class="row">
             {% for post in post_list %}
