@@ -258,7 +258,7 @@ Explore premium memberships or in-app purchases for advanced tools and features.
 
 ## Wireframes
 
-https://github.com/Cosh66/django-project-1/blob/main/Homepage.png?raw=true
+![Alt text](image-url-or-path "Optional Title")https://github.com/Cosh66/django-project-1/blob/main/Homepage.png?raw=true
 
 
 
