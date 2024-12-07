@@ -2,7 +2,7 @@
 
 ![Project name responsive screenshot](documentation/final_views/)
 
-## Introduction
+# Introduction
 
 Welcome to Creative Star, a unique platform designed to celebrate creativity and foster a vibrant community of artists and enthusiasts. This web application allows users to upload AI-generated imagery, share their artistic creations, and engage with others through comments and discussions.
 
@@ -14,7 +14,7 @@ For Admin access with relevant sign-in information: [Happy Heath Admin](https://
 
 <hr>
 
-##  Project Overview
+#  Project Overview
 
 Creative Star leverages modern web technologies to provide a seamless and interactive user experience. This project aims to empower users to showcase their creativity while connecting with like-minded individuals in a supportive and dynamic environment.
 Whether you're an experienced digital artist or someone exploring the possibilities of AI-generated art for the first time, Creative Star is the perfect space to express yourself, discover inspiration, and be part of a growing creative movement.
@@ -39,7 +39,7 @@ Interact with others by commenting on shared creations.
 Explore a gallery of diverse and inspiring AI-driven artistry.
 By combining cutting-edge technology with an emphasis on community, Creative Star aspires to redefine how art is created, shared, and appreciated in the digital age.
 
-## Features
+# Features
 
 Current Features
 Users can upload AI-generated images to showcase their creativity.
@@ -61,7 +61,7 @@ A visually appealing gallery displays all uploaded images, encouraging discovery
 User Dashboard:
 Registered users have access to a dashboard to manage their uploads and track interactions.
 
-## Future Features
+# Future Features
 
 Advanced User Profiles:
 Add customizable profiles where users can showcase their uploaded images, favorite works, and bio information.
@@ -81,9 +81,7 @@ Include an integrated AI tool to let users create art directly on the platform.
 Enhanced Moderation:
 Add tools for users and admins to report inappropriate content, ensuring a safe and welcoming community.
 
- # Technologies Used
-
-## Frameworks and Languages
+# Frameworks and Languages
 
 Django (Python):
 Chosen for its robust framework and built-in features, such as the ORM, authentication, and admin interface, which streamline development.
