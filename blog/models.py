@@ -2,15 +2,18 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
+
+
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
 # Image Upload Model
 class UploadedImage(models.Model):
-    title = models.CharField(max_length=200)
-    image = models.ImageField(upload_to='images/')
+    title = models.CharField(max_length=255)
+    image = CloudinaryField('image')
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
     uploaded_at = models.DateTimeField(auto_now_add=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)  # Link to the user who uploaded the image
+    status = models.IntegerField(choices=STATUS, default=0)  # Link to the user who uploaded the image
 
     def __str__(self):
         return self.title

@@ -1,25 +1,18 @@
 {% extends "base.html" %}
+
 {% block content %}
-    <div class="text-center my-5">
-        <h1>Welcome to Creative Star</h1>
-        <p>Discover and share your AI-generated creations!</p>
-        <a href="{% url 'about' %}" class="btn btn-secondary mt-3">Learn About Us</a>
+    <div class="hero">
+        <img src="{% static 'images/home_page.png' %}" alt="Hero Image" class="hero-image">
+        <div class="hero-text">
+            <h1>Welcome to Creative Star</h1>
+            <p>Discover and share your AI-generated creations.</p>
+            <a href="{% url 'about' %}" class="btn btn-secondary mt-3">Learn About Us</a>
+        </div>
     </div>
-    <div class="gallery">
+
+    <div class="gallery mt-5">
         <!-- Your gallery code here -->
+        <h2 class="text-center">Featured Creations</h2>
+        <!-- Add gallery content here -->
     </div>
-{% endblock %}
-
-
-
-
-{% block content %}
-<div class="hero">
-    <img src="{% static 'images/home_page.png' %}" alt="Hero Image" class="hero-image">
-    <div class="hero-text">
-        <h1>Welcome to Creative Star</h1>
-        <p>Discover and share your AI-generated creations.</p>
-        <a href="/about/" class="btn">Learn More</a>
-    </div>
-</div>
 {% endblock %}

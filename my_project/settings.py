@@ -43,11 +43,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cloudinary_storage',
+    'cloudinary',
     'django.contrib.sites',  # Required by django-allauth
 
     # Third-party apps
     'django_summernote',
-    'cloudinary',
+    
 
     # Allauth apps
     'allauth',
