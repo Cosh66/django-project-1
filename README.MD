@@ -332,7 +332,7 @@ It was important to me from the beginning that Creative Star be accessible to an
 - [Favicon](https://favicon.io/) to create favicon.
 - [Image resizer](https://imageresizer.com/) to resize avatar images to thumbnails.
 
-# Testing
+## Testing
 
 The Creative Star platform has undergone thorough testing to ensure a smooth user experience, functionality, and responsiveness across devices. Both manual and automated tests were performed to identify and resolve any bugs or issues.
 
