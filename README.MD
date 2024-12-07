@@ -198,23 +198,6 @@ Community Building: Encourage active participation through interactive and socia
 Innovation and Creativity: Leverage cutting-edge technologies to provide unique and inspiring experiences.
 Sustainability: Develop the platform with scalability and long-term usability in mind.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Scope Plane
 
 The Scope Plane defines the specific features and functionality of Creative Star that will help achieve the goals outlined in the Strategy Plane. It includes the features planned for the initial release and outlines potential future enhancements.
@@ -275,10 +258,11 @@ Explore premium memberships or in-app purchases for advanced tools and features.
 
 ## Wireframes
 
-![Homepage Wireframe](static/images/ "Homepage View Wireframe")
+![Tablet Wireframe](static/images/homepage-wireframe.png "Tablet View Wireframe")
 ![Tablet Wireframe](static/images/homepage-wireframe.png "Tablet View Wireframe")
 ![Mobile Wireframe](static/images/homepage-wireframe.png "Mobile View Wireframe")
 ![Burger Wireframe](static/images/homepage-wireframe.png "Burger View Wireframe")
+![Tablet Wireframe](static/images/homepage-wireframe.png "Tablet View Wireframe")
 
 
 
