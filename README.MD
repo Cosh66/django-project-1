@@ -1,6 +1,4 @@
-## Project name
-
-###Creative Star
+## Project name # Creative Star
 
 ## Introduction
 
