@@ -81,9 +81,9 @@ Include an integrated AI tool to let users create art directly on the platform.
 Enhanced Moderation:
 Add tools for users and admins to report inappropriate content, ensuring a safe and welcoming community.
 
- ## Technologies Used
+ # Technologies Used
 
-# Frameworks and Languages
+## Frameworks and Languages
 
 Django (Python):
 Chosen for its robust framework and built-in features, such as the ORM, authentication, and admin interface, which streamline development.
