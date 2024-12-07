@@ -258,11 +258,7 @@ Explore premium memberships or in-app purchases for advanced tools and features.
 
 ## Wireframes
 
-Desktop Wireframe
-Tablet Wireframe
-Mobile Wireframe
-Burger Wireframe
-Gallery Upload Wireframe
+https://github.com/Cosh66/django-project-1/blob/main/Homepage.png?raw=true
 
 
 
