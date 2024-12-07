@@ -527,7 +527,7 @@ The concept of Creative Star was inspired by the growing interest in AI-generate
 
 #### Thank you for my team support: (when I was ready to quit)
 
-#### Thank you to Amy my fisilator: (Amy is a kepper in your Code Institude)
+#### Thank you to Amy my fisilator: (Amazing cool beans, Amy is a keeper)
 
 #### ChatGPT (by OpenAI): For assisting with brainstorming ideas, crafting and helping me with the README, and providing guidance throughout the development of Creative Star.
 
