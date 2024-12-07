@@ -468,7 +468,7 @@ In your project workspace:
 1. Navigate to [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/).
 2. Enter your student email address and click submit. Wait whilst the database is created. When done an emial will be sent to your student email address.
 3. Review the email which will contain a URL to connect to your new database.
-4. Copy the database URL and place within your **DATABASE_URL**  in your **env.py** file and follow the below instructions to place it in your Heroku Config Vars.
+4. Copy the database URL and place within your **DATABASE_URL**  in your **env.py** file and follow the below instructions to place it in your Heroku Config Vars. 
 
 ## Heroku deployment
 
