@@ -314,9 +314,8 @@ It was important to me from the beginning that Happy Heath be accessible to an u
 | Feature | Unregistered User | Registered, Logged-In User |
 |-----------|-------------------|-----------------|
 | About page | Visible | Visible |
-| Paginated blogs | Visible | Visible |
-| Blog post | Visible | Visible |
-| Comments | Visible but not able to add/amend | Visible with full feature interaction |
+| Uplosd Images | Not visable | Visible |
+| Comments | Not visable | Visible with full feature interaction |
 
 ## CRUD Functionality
 
