@@ -213,48 +213,7 @@ Sustainability: Develop the platform with scalability and long-term usability in
 
 
 
-### Site Goals
 
-
-
-## Agile Methodologies - Project Management
-
- Happy Heath is my first project following Agile planning methods. I used my [Github Projects Board](https://github.com/users/Heath1979/projects/4) to plan and document all of my work.
-
-### MoSCoW Prioritization
-
-I chose to follow the MoSCoW Prioritization method for Happy Heath, identifying and labelling my:
-
-- **Must Haves**: the 'required', critical components of the project. Completing my 'Must Haves' helped me to reach the MVP (Minimum Viable Product) for this project early, allowing me to develop the project further than originally planned. 
-- **Should Haves**: the components that are valuable to the project but not absolutely 'vital' at the MVP stage. The 'Must Haves' must receive priority over the 'Should Haves'.
-- **Could Haves**: these are the features that are a 'bonus' to the project, it would be nice to have them in this phase, but only if the most important issues have been completed first and time allows.
-- **Won't Haves**: the features or components that either no longer fit the project's brief or are of very low priority for this release. 
-
-## User Stories
-
-User stories and features recorded and managed on [GitHub Projects](https://github.com/users/Heath1979/projects/4)
-
-### Visitor User Stories
-
-| User Story | Priority |
-|----------------------------------------------------------------------------------------------------------------------------|---------------|
-| As a **user**, I would like to **view a paginated list of posts** so that I can **select which post I want to view** | **MUST HAVE** |
-| As a **site user**, I would like to **click on a post** so that I can **read the full text** | **MUST HAVE** |
-| As a **user**, I would like to **check my profile page** so that I can **see my history and amend my details** | **COULD HAVE** |
-| As a **site user/admin**, I would like to **view comments on an individual post** so that I can **see feedback on the post** | **SHOULD HAVE** |
-| As a **site user**, I would like to **regisger an account** so that I can **comment on a post** | **MUST HAVE** |    
-| As a **user**, I would like to **access a blank review/blog template** so that I can **create my own post** | **WONT HAVE** | 
-| As a **user**, I would like to **comment on a post** so that I can **interact with the community** | **SHOULD HAVE** | 
-| As a **site user**, I would like to **be able to modify or delete a comment on a post** so that I can **make amendments** | **SHOULD HAVE** | 
-| As a **user**, I would like to **be able to access external links** so that I can **learn more about the topics in the posts** | **COULD HAVE** | 
-| As a **site admin**, I would like to **create, read, update, and delete posts** so that I can **can manage my blog content** | **MUST HAVE** | 
-| As a **site admin**, I would like to **create draft posts** so that I can **so that I can finish writing content at a later date** | **SHOULD HAVE** | 
-| As a **user**, I would like to **filter the posts by category** so that I can **so that I can view posts on a category I am interested in** | **COULD HAVE** | 
-| As a **user**, I would like to **filter the posts by location** so that I can **so that I can view posts based on a particular location** | **COULD HAVE** | 
-| As a **user**, I would like to **learn what the posts are about** so that I can **so that I can understand the purpose of the website** | **SHOULD HAVE** |     
-| As a **site admin**, I would like to **create and update the about page content** so that I can **keep the page updated with the most relevant information** | **MUST HAVE** |  
-| As a **site user**, I would like to **be able to contact the site admin** so that I can **make a request to collaborate or make recomendations** | **COULD HAVE** |  
-| As a **site admin**, I would like to **be able to store contact requests** so that I can **review them at a later date** | **COULD HAVE** |  
 
 ## Scope Plane
 
