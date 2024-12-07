@@ -260,13 +260,15 @@ Explore premium memberships or in-app purchases for advanced tools and features.
 
 ### Homepage Wireframe
 
-This wireframe illustrates the main landing page of the platform, showcasing featured artwork and providing users with navigation options.
-![Homepage Wireframe](static/images/home_page.png "Homepage Wireframe")
+### Tablet Wireframe
+
+### Mobile Wireframe
+
 
 ### Upload Page Wireframe
 
-The upload page wireframe outlines the user interface for uploading and managing AI-generated images.
-![Upload Wireframe](static/ "Upload Wireframe")
+
+
 
 
 
