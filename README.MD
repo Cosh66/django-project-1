@@ -258,7 +258,7 @@ Explore premium memberships or in-app purchases for advanced tools and features.
 
 ## Wireframes
 
-![Tablet Wireframe](static/images/homepage-wireframe.png "Tablet View Wireframe")
+![Tablet Wireframe](static/ "Tablet View Wireframe")
 ![Tablet Wireframe](static/images/homepage-wireframe.png "Tablet View Wireframe")
 ![Mobile Wireframe](static/images/homepage-wireframe.png "Mobile View Wireframe")
 ![Burger Wireframe](static/images/homepage-wireframe.png "Burger View Wireframe")
