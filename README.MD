@@ -1,6 +1,6 @@
 ## Project name
 
-![Project name responsive screenshot](documentation/final_views/)
+![Project name responsive screenshot](documentation/final_views/) 
 
 ## Introduction
 
