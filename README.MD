@@ -281,7 +281,7 @@ Django AllAuth is an installable framework that takes care of the user registrat
 
 ## User View - Registered/Unregistered
 
-It was important to me from the beginning that Happy Heath be accessible to an unregistered user, in some capacity. I wanted the website to sell the idea of using local businesses to a new user quickly by immediately inviting them into the community through the blogs and comments sections. The following is a breakdown of the site's accessibility for registered/unregistered users:
+It was important to me from the beginning that Creative Star be accessible to an unregistered user, in some capacity. I wanted the website to sell the idea of using About to a new user quickly by immediately inviting them into the community through the Uploads and comments sections. The following is a breakdown of the site's accessibility for registered/unregistered users:
 
 | Feature | Unregistered User | Registered, Logged-In User |
 |-----------|-------------------|-----------------|
