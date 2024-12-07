@@ -1,4 +1,4 @@
-## Project name # Creative Star
+## Project name <h1>Creative Star</h1>
 
 ## Introduction
 
