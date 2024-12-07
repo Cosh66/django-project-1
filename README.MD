@@ -521,6 +521,8 @@ The concept of Creative Star was inspired by the growing interest in AI-generate
 ### Special Thanks
 
 To my family: For their encouragement and support during the development process.
-ChatGPT (by OpenAI): For assisting with brainstorming ideas, crafting the README, and providing guidance throughout the development of Creative Star.
-[My Team Members]: For helping me get through building this project.
+ChatGPT (by OpenAI): For assisting with brainstorming ideas, crafting and helping me with the README, and providing guidance throughout the development of Creative Star.
+[My Team Members Sazzzel and Joanne ]: For helping me with problems through building this project.
+A special thank you to my ficilitor Amy, for her patience with helping me.
+And a special thanks for John and Mark who helped with coding that went wrong (basically I boke it they fixed it)
 
