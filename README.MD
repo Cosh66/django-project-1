@@ -291,41 +291,11 @@ Explore premium memberships or in-app purchases for advanced tools and features.
 
 
 
-**Mobile and Desktop views for:**
- 
-- About
-- Paginated posts
-- Blog post
+## Security
 
-<details open>
-  <summary>About Wireframe</summary>
-  <img src="documentation/wireframes/wireframe_about.png">
-</details>  
+A number of security steps were taken in this project in order to protect the user's submitted data. Unlike a strictly informative website, Creative Star allows the user to become part of the community and interact with the comments. To meet the strict internet standards of protecting a user's data, the following processes were included in the project's development.
 
-<details open>
-  <summary>Paginated posts Wireframe</summary>
-  <img src="documentation/wireframes/wireframe_home.png">
-</details>
-
-<details open>
-  <summary>Blog posts Wireframe</summary>
-  <img src="documentation/wireframes/wireframe_blog.png">
-</details>
-
-### Database Schema - Entity Relationship Dagram
-
-![ERD Image](documentation/wireframes/lucid_chart.png)
-*Database Schema (ERD) for Happy Heath diaplaying relationships between feature components saved within the database*
-
-This Entity Relationship Diagram(ERD) demonstrates how each feature interacts with each other and the connected PostgreSQL Database. Using Django's User Model, and Django AllAuth to carry out all user authentication, a user_id is created when the user registers with their username and email. This allows the user to add and edit comments which will display their username. For future development users will be able to create their own blog posts and set comment approvals.
-
-The User, Post and Comments Models were inspired by the blog walkthrough by the Code Institute. This helped me to get a grasp of the templating structure and connected Python files.
-
-### Security
-
-A number of security steps were taken in this project in order to protect the user's submitted data. Unlike a strictly informative website, Happy Heath allows the user to become part of the community and interact with the posts. To meet the strict internet standards of protecting a user's data, the following processes were included in the project's development.
-
-**AllAuth**  
+### AllAuth  
 
 Django AllAuth is an installable framework that takes care of the user registration and authentication process. Authentication was needed to determine when a user was registered or unregistered and it controlled who could add comments to the posts. The setup of AllAuth included:
 
@@ -334,22 +304,8 @@ Django AllAuth is an installable framework that takes care of the user registrat
 - sourcing the AUTHENTICATION_BACKENDS from the AllAuth docs for my settings.py
 - adding its URL to my projects 'urls.py'
 - run database migrations to create the tables needed for AllAuth
-- (For this version of Happy Heath, to meet MVP, email and social accounts were not configured as part of the feedback/sign up options to the user.)
   
-**Defensive Design**  
-
-Happy Heath was developed to ensure a smooth user experience, to the best of my current learning experience with Django. 
-
-- Input validation and error messages provide feedback to the user to guide them towards the desired outcome. 
-- Authentication processes control edit/delete icons to reveal them to the comment author only. 
-- Deletion of data is confirmed through an additional modal, double-checking with the user.
-- Testing and validation of features completes the process.
-
-**CSRF Tokens** 
-
-CSRF (Cross-Site Request Forgery) tokens are included in every form to help authenticate the request with the server when the form is submitted. Absence of these tokens can leave a site vulnerable to attackers who may steal a users data.
-  
-# Features
+## Features
 
 ## User View - Registered/Unregistered
 
