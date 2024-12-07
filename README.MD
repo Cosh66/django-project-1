@@ -145,7 +145,7 @@ System fonts: Ensures compatibility across various browsers and devices.
 ### Font Usage
 Headings: The primary font is used for headings to ensure a bold and striking appearance.
 Body Text: The primary font is also applied to body text for a cohesive design.
-Special Elements: Font weight and size variations are utilized to emphasize buttons, labels, and interactive elements.
+Special Elements: Font weight and size variations are utilized to emphasize buttons, labels, and interactive elements. 
 
 ### Web Font Integration
 <link href="https://fonts.googleapis.com/css2?family=FontName:wght@400;700&display=swap" rel="stylesheet">  
