@@ -1,10 +1,11 @@
 # Project name
 
-![Project name responsive screenshot](documentation/final_views/)
+
+
 
 ## Introduction
 
-Happy Heath is a blog website showcasing local businesses and the Site Admins experience of them. This website has been developed as part of the Code Institute’s Full-Stack Developer Bootcamp course as my assessed project - focusing on a Django framework, Database manipulation, and CRUD functionality. This project is for educational purposes only.
+Happy Heath is a 
 
 View live site here : [Happy Heath](https://happy-heath-3daa657fbb51.herokuapp.com/)  
   
