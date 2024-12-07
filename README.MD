@@ -1,8 +1,8 @@
-# Project name
+## Project name
 
 ![Project name responsive screenshot](documentation/final_views/)
 
-# Introduction
+## Introduction
 
 Welcome to Creative Star, a unique platform designed to celebrate creativity and foster a vibrant community of artists and enthusiasts. This web application allows users to upload AI-generated imagery, share their artistic creations, and engage with others through comments and discussions.
 
@@ -10,7 +10,7 @@ Built using the Django framework, Creative Star leverages modern web technologie
 
 View live site here : [https://8000-cosh66-djangoproject1-kt8nnb24tp7.ws.codeinstitute-ide.net/)  
   
-#  Project Overview
+##  Project Overview
 
 Creative Star leverages modern web technologies to provide a seamless and interactive user experience. This project aims to empower users to showcase their creativity while connecting with like-minded individuals in a supportive and dynamic environment.
 Whether you're an experienced digital artist or someone exploring the possibilities of AI-generated art for the first time, Creative Star is the perfect space to express yourself, discover inspiration, and be part of a growing creative movement.
@@ -74,7 +74,7 @@ Include an integrated AI tool to let users create art directly on the platform.
 Enhanced Moderation:
 Add tools for users and admins to report inappropriate content, ensuring a safe and welcoming community.
 
-# Frameworks and Languages
+## Frameworks and Languages
 
 Django (Python):
 Chosen for its robust framework and built-in features, such as the ORM, authentication, and admin interface, which streamline development.
@@ -92,11 +92,11 @@ Enhances the visual design of the platform, ensuring a polished and responsive u
 JavaScript:
 Adds interactivity and dynamic behavior to the front-end, such as form validations and responsive elements.
 
-# User Experience
+## User Experience
 
 The Creative Star platform has been designed with a user-first approach, ensuring an intuitive and engaging experience for all visitors. By focusing on accessibility, responsiveness, and simplicity, the platform provides a seamless journey from registration to sharing and interacting with art.
 
-# User Stories
+## User Stories
 
 ### General Users
 As a user, I want to browse a gallery of AI-generated images to find inspiration.
@@ -131,7 +131,7 @@ Comments: A commenting feature allows users to interact and discuss artwork.
 Navigation: Clear and intuitive navigation ensures easy access to key features.
 
 
-# Font
+## Font
 
 Creative Star uses modern, readable, and visually appealing fonts to enhance the overall user experience and align with the platform's creative theme. The selected font styles ensure clarity and aesthetics across all devices and screen sizes.
 
@@ -163,7 +163,7 @@ Connect with a like-minded community of art enthusiasts.
 Receive feedback and foster discussions through interactive features like comments.
 By addressing these needs, the platform aims to bridge the gap between technology and artistic expression.
 
-# Strategy Plane
+## Strategy Plane
 
 The Strategy Plane outlines the high-level objectives and goals of the Creative Star project. It focuses on understanding user needs, defining the purpose of the platform, and ensuring alignment with long-term goals.
 
@@ -217,27 +217,79 @@ Sustainability: Develop the platform with scalability and long-term usability in
 
 ## Scope Plane
 
-As this would be a dual learning/building project using technologies that were new to me, such as Django, SQL, Bootstrap and Cloudinary, I was cautious to maintain consistent control over the scope of the project and not let my idea grow too big. I needed to lockdown my project features early on into manageable blocks so as not to lose track of the MVP. Following Agile Planning Methodologies, I added my User Stories as issues on my [GitHub Projects](https://github.com/users/Heath1979/projects/4) to keep the flow of the project in check.
+The Scope Plane defines the specific features and functionality of Creative Star that will help achieve the goals outlined in the Strategy Plane. It includes the features planned for the initial release and outlines potential future enhancements.
 
-Essential features of my project were:
-- An accessible website that fulfils user needs
-- Responsive website for users of mobile, tablet and desktop devices
-- User Authentication
-- User profile creation and editing
-- Comment feature with full CRUD functionality
-- About me details to inform the user
+### AI Image Upload:
 
-Planning my project thoroughly from the start allowed me to identify areas of importance for MVP completion and satisfaction of assessment criteria, and to balance them with the feasibility of the features.
+Allow users to upload and showcase their AI-generated artwork.
+Secure image storage using Cloudinary.
 
-## Structural Plane
+### User Registration and Authentication:
 
-From initial concept through to finished product I opted to use standard navigation elements to keep with the theme of familiarity. Bootstrap was used to help control the flexibility of the site across multiple screen sizes. 
+Enable users to create accounts, log in, and log out securely.
+Provide a personalized experience for registered users.
 
-## Skeleton & Surface Planes
+### Commenting System:
 
-### Wireframes
+Allow users to leave comments on images to foster community interaction.
+Include a feature for users to edit or delete their comments.
 
-The wireframes for Happy Heath were made using Balsamiq. I was sure of the structure of the site and had a general feel of how the colour scheme would work within the structure prior to beginning the project but was prepared to adapt as the project reached its conclusion. Wireframes as below have only been created for the Blog and About pages as all login and registration forms would be created by Allauth.
+### Gallery View:
+
+Display all uploaded images in an organized and visually appealing format.
+
+### Responsive Design:
+
+Ensure the platform is fully functional on all devices, including desktops, tablets, and mobile phones.
+
+### Admin Panel:
+
+Provide admin-level controls for managing uploads and comments to maintain a safe and respectful community.
+
+## Enhanced Features (Future Development)
+
+### Advanced User Profiles:
+
+Allow users to customize their profiles with a bio, profile picture, and collection of favorite uploads.
+
+### Search and Filtering:
+
+Enable users to search and filter images by tags, categories, or keywords.
+
+### Like/Rating System:
+
+Introduce a feature to rate or like artwork, highlighting popular creations.
+
+### Private Messaging:
+
+Allow users to communicate directly for collaboration and feedback.
+
+### AI Art Generator Integration:
+
+Provide users with tools to generate AI art directly within the platform.
+
+### Monetization Options:
+
+Explore premium memberships or in-app purchases for advanced tools and features.
+
+
+## Wireframes
+
+![Homepage Wireframe](static/images/ "Homepage View Wireframe")
+![Tablet Wireframe](static/images/homepage-wireframe.png "Tablet View Wireframe")
+![Mobile Wireframe](static/images/homepage-wireframe.png "Mobile View Wireframe")
+![Burger Wireframe](static/images/homepage-wireframe.png "Burger View Wireframe")
+
+
+
+
+
+
+
+
+
+
+
 
 **Mobile and Desktop views for:**
  
