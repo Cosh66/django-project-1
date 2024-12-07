@@ -6,7 +6,7 @@ Welcome to Creative Star, a unique platform designed to celebrate creativity and
 
 Built using the Django framework, Creative Star leverages modern web technologies to provide a seamless and interactive user experience. This project aims to empower users to showcase their creativity while connecting with like-minded individuals in a supportive and dynamic environment.
 
-View live site here : [https://8000-cosh66-djangoproject1-kt8nnb24tp7.ws.codeinstitute-ide.net/)  
+View live site here : https://my-first-hello-world-project-30a28e76bcf2.herokuapp.com/
   
 ##  Project Overview
 
