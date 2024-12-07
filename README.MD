@@ -116,30 +116,134 @@ Adds interactivity and dynamic behavior to the front-end, such as form validatio
 
 
 
-# UX - User Experience
+# User Experience
 
-### Colour Scheme
+The Creative Star platform has been designed with a user-first approach, ensuring an intuitive and engaging experience for all visitors. By focusing on accessibility, responsiveness, and simplicity, the platform provides a seamless journey from registration to sharing and interacting with art.
 
-I aimed for a colour scheme that evoked feelings of warmth and trust. The colour scheme aims to provide an earthy palette in order to create an inviting and natural aesthetic.
+# User Stories
 
-![screenshot of colour scheme](documentation/final_views/color-pallette.png)  
+General Users
+As a user, I want to browse a gallery of AI-generated images to find inspiration.
+As a user, I want to leave comments on artwork to engage with the community.
+As a user, I want a responsive design so I can access the platform from any device.
 
-### Font
+Registered Users
+As a registered user, I want to upload my AI-generated images to share my creativity.
+As a registered user, I want to edit or delete my uploads for better control over my content.
+As a registered user, I want to view and manage my uploads from a personalized dashboard.
 
-In terms of Font style I opted to stay with the standard Ariel due to its familiarity with users. It is clean and professional and does not detract from other elements of the webpage.
-  
-# Project Planning  
- 
-## Strategy Plane
+Admin Users
+As an admin, I want to manage user uploads and comments to ensure a safe environment.
+As an admin, I want to access a robust backend system to efficiently moderate content.
 
-The project goal was to build a simple website showcasing users experiences with local businesses with the option to have a dynamic conversation about the blog posts using the comments section. My intention is to showcase local businesses and the services they offer. A rating system would be added on the idea of the user being a ‘Happy Heath’ or ‘Grumpy Croasdale’. Where possible external links to the businesses would be added in relation to social media and business websites.
+Design Principles
+Simplicity:
+The interface is designed to minimize complexity, focusing on ease of use for users of all technical backgrounds.
+
+Accessibility:
+The platform adheres to best practices for web accessibility, ensuring inclusivity for all users, including those with disabilities.
+
+Responsiveness:
+The site is optimized for devices of all sizes, from desktops to tablets and smartphones.
+
+Consistency:
+A consistent visual language is maintained throughout the platform, offering a cohesive user experience.
+
+Interactive Elements
+Image Upload: Users are guided through a simple process to upload their artwork.
+Comments: A commenting feature allows users to interact and discuss artwork.
+Navigation: Clear and intuitive navigation ensures easy access to key features.
+
+
+# Font
+
+Creative Star uses modern, readable, and visually appealing fonts to enhance the overall user experience and align with the platform's creative theme. The selected font styles ensure clarity and aesthetics across all devices and screen sizes.
+
+## Primary Font
+
+Font Name: [Montserrat, Roboto,]
+Reason for Choice:
+Clean and professional look.
+Excellent readability for both small and large text.
+Complements the creative and modern theme of the platform.
+
+## Fallback Fonts
+
+In case the primary font is unavailable, the following fallback fonts are used:
+Sans-serif family: Ensures a clean and consistent appearance.
+System fonts: Ensures compatibility across various browsers and devices.
+
+## Font Usage
+
+Headings: The primary font is used for headings to ensure a bold and striking appearance.
+Body Text: The primary font is also applied to body text for a cohesive design.
+Special Elements: Font weight and size variations are utilized to emphasize buttons, labels, and interactive elements.
+
+## Web Font Integration
+<link href="https://fonts.googleapis.com/css2?family=FontName:wght@400;700&display=swap" rel="stylesheet">
+
+## Project Purpose
+The primary purpose of Creative Star is to create a platform that enables users to:
+
+Showcase their creativity through AI-generated art.
+Connect with a like-minded community of art enthusiasts.
+Receive feedback and foster discussions through interactive features like comments.
+By addressing these needs, the platform aims to bridge the gap between technology and artistic expression.
+
+# Strategy Plane
+
+The Strategy Plane outlines the high-level objectives and goals of the Creative Star project. It focuses on understanding user needs, defining the purpose of the platform, and ensuring alignment with long-term goals.
+
+## Project Purpose
+
+The primary purpose of Creative Star is to create a platform that enables users to:
+
+Showcase their creativity through AI-generated art.
+Connect with a like-minded community of art enthusiasts.
+Receive feedback and foster discussions through interactive features like comments.
+By addressing these needs, the platform aims to bridge the gap between technology and artistic expression.
+
+## Target Audience
+
+Digital Artists: Professionals and hobbyists exploring AI-generated art.
+AI Enthusiasts: Individuals curious about the potential of AI in creative fields.
+General Art Lovers: Users who appreciate innovative and diverse artistic styles.
+
+## User Goals
+
+Discover and explore unique AI-generated artwork.
+Easily upload and share their own creations.
+Interact with other users through comments and discussions.
+Enjoy a seamless and responsive platform across devices.
+
+## Business Goals
+
+Build an engaging platform that grows a community of loyal users.
+Position Creative Star as a leader in AI-art showcase platforms.
+Introduce future monetization opportunities, such as premium memberships or integrated AI tools.
+Ensure scalability and adaptability for incorporating new features over time.
+
+## Core Strategy
+
+User-Centric Design: Every feature and decision is guided by user needs and preferences.
+Community Building: Encourage active participation through interactive and social elements.
+Innovation and Creativity: Leverage cutting-edge technologies to provide unique and inspiring experiences.
+Sustainability: Develop the platform with scalability and long-term usability in mind.
+
+
+
+
+
+
+
+
+
+
+
 
 ### Site Goals
 
-- Create an environment where people could rate and discuss local businesses.
-- Easy UI for quick fulfilment of feature CRUD functionalities.
-- UX remain the same whether on mobile, tablet or desktop
-- Scalable idea, for addition of future features that would allow for business owners to promote themselves.
+
 
 ## Agile Methodologies - Project Management
 
