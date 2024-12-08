@@ -1,92 +1,327 @@
-# Creative Star
+# Project name
+
+![Project name responsive screenshot](documentation/final_views/)
 
 ## Introduction
 
-Welcome to Creative Star, a unique platform designed to celebrate creativity and foster a vibrant community of artists and enthusiasts. This web application allows users to upload AI-generated imagery, share their artistic creations, and engage with others through comments and discussions.
+Happy Heath is a blog website showcasing local businesses and the Site Admins experience of them. This website has been developed as part of the Code Institute’s Full-Stack Developer Bootcamp course as my assessed project - focusing on a Django framework, Database manipulation, and CRUD functionality. This project is for educational purposes only.
 
-Built using the Django framework, Creative Star leverages modern web technologies to provide a seamless and interactive user experience. This project aims to empower users to showcase their creativity while connecting with like-minded individuals in a supportive and dynamic environment.
-
-View live site here : https://my-first-hello-world-project-30a28e76bcf2.herokuapp.com/
+View live site here : [Happy Heath](https://happy-heath-3daa657fbb51.herokuapp.com/)  
   
-##  Project Overview
+For Admin access with relevant sign-in information: [Happy Heath Admin](https://happy-heath-3daa657fbb51.herokuapp.com/admin/login/?next=/admin/)
 
-Creative Star leverages modern web technologies to provide a seamless and interactive user experience. This project aims to empower users to showcase their creativity while connecting with like-minded individuals in a supportive and dynamic environment.
-Whether you're an experienced digital artist or someone exploring the possibilities of AI-generated art for the first time, Creative Star is the perfect space to express yourself, discover inspiration, and be part of a growing creative movement.
+<hr>
 
-### Key Features
+## Table of Contents
 
-Image Uploads: Users can easily upload AI-generated images to showcase their creativity.
-Commenting System: Visitors and members can engage with the artwork by leaving comments, fostering interaction and feedback.
-Community-Centric Design: The platform is built to encourage connections among users with shared interests in AI and digital art.
-User-Friendly Interface: A simple, intuitive design ensures an accessible experience for all users, regardless of technical expertise.
+- [Happy Heath](#happy-heath)
+  - [Introduction](#introduction)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+- [UX - User Experience](#ux---user-experience)
+  - [Colour Scheme](#colour-scheme)
+  - [Font](#font)
+- [Project Planning](#project-planning)
+  - [Strategy Plane](#strategy-plane)
+    - [Site Goals](#site-goals)
+  - [Agile Methodologies - Project Management](#agile-methodologies---project-management)
+    - [MoSCoW Prioritization](#moscow-prioritization)
+  - [User Stories](#user-stories)
+    - [Visitor User Stories](#visitor-user-stories)
+  - [Scope Plane](#scope-plane)
+  - [Structural Plane](#structural-plane)
+  - [Skeleton \& Surface Planes](#skeleton--surface-planes)
+    - [Wireframes](#wireframes)
+    - [Database Schema - Entity Relationship Diagram](#database-schema---entity-relationship-diagram)
+    - [Security](#security)
+- [Features](#features)
+  - [User View - Registered/Unregistered](#user-view---registeredunregistered)
+  - [CRUD Functionality](#crud-functionality)
+  - [Feature Showcase](#feature-showcase)
+  - [Future Features](#future-features)
+- [Technologies \& Languages Used](#technologies--languages-used)
+  - [Libraries \& Frameworks](#libraries--frameworks)
+  - [Tools \& Programs](#tools--programs)
+- [Testing](#testing)
+- [Deployment](#deployment)
+  - [Connecting to GitHub](#connecting-to-github)
+  - [Django Project Setup](#django-project-setup)
+  - [Cloudinary API](#cloudinary-api)
+  - [PostgreSQL from Code Institute](#postgreSQL-from-code-institute)
+  - [Heroku deployment](#heroku-deployment)
+- [Credits](#credits)
+  - [Content References](#content-references)
+  - [Media Refernces](#media-references)
+  - [Code](#code)
+  - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
 
-### Creative Star is designed for:
+## Overview
 
-Digital artists exploring AI tools for creative projects.
-Enthusiasts and professionals interested in the intersection of art and technology.
-Anyone looking to connect with a community that appreciates innovative and artistic creations.
-Main Functionality
+Happy Heath is a blog site about experiences with local businesses. Users are invited to:
 
-### The platform enables users to:
+- Join the Happy Heath community
+- Create their own profiles
+- Interact with reviews through the comments section
 
-Create accounts for personalized experiences.
-Upload and share their AI-generated artwork.
-Interact with others by commenting on shared creations.
-Explore a gallery of diverse and inspiring AI-driven artistry.
-By combining cutting-edge technology with an emphasis on community, Creative Star aspires to redefine how art is created, shared, and appreciated in the digital age.
+Happy Heath is accessible via all browsers with full responsiveness on different screen sizes. Its aim is to create a space where people can read about local businesses and comment on their own experiences. Many small businesses can often only be found through social media business pages and rely on word of mouth to build up business. The aim of the site is to support these businesses and drive customers to them where possible via positive blog posts. Any posts that have a critique of a business should still provide some positivity and hopefully just be to highlight a fixable negative. Happy Heath aims to provide a starting point for people to discuss and promote local businesses. In future developments I would like to invite local businesses the opportunity to promote themselves and add the functionality for users to search for businesses by type.
 
-### Current Features
+# UX - User Experience
 
-Users can upload AI-generated images to showcase their creativity.
-Images are securely stored using Cloudinary, ensuring high performance and reliability.
+### Colour Scheme
 
-### User Registration and Authentication:
+I aimed for a colour scheme that evoked feelings of warmth and trust. The colour scheme aims to provide an earthy palette in order to create an inviting and natural aesthetic.
 
-Visitors can create accounts, log in, and log out.
-Authentication ensures user-specific functionality and a personalized experience.
+![screenshot of colour scheme](documentation/final_views/color-pallette.png)  
 
-### Commenting System:
+### Font
 
-Users can leave comments on uploaded images, fostering engagement and interaction within the community.
+In terms of Font style I opted to stay with the standard Ariel due to its familiarity with users. It is clean and professional and does not detract from other elements of the webpage.
+  
+# Project Planning  
+ 
+## Strategy Plane
 
-### Responsive Design:
+The project goal was to build a simple website showcasing users experiences with local businesses with the option to have a dynamic conversation about the blog posts using the comments section. My intention is to showcase local businesses and the services they offer. A rating system would be added on the idea of the user being a ‘Happy Heath’ or ‘Grumpy Croasdale’. Where possible external links to the businesses would be added in relation to social media and business websites.
 
-The platform is fully responsive, providing an optimal user experience across various devices and screen sizes.
+### Site Goals
 
-### Gallery View:
+- Create an environment where people could rate and discuss local businesses.
+- Easy UI for quick fulfilment of feature CRUD functionalities.
+- UX remain the same whether on mobile, tablet or desktop
+- Scalable idea, for addition of future features that would allow for business owners to promote themselves.
 
-A visually appealing gallery displays all uploaded images, encouraging discovery and inspiration.
+## Agile Methodologies - Project Management
 
-### User Dashboard:
+ Happy Heath is my first project following Agile planning methods. I used my [Github Projects Board](https://github.com/users/Heath1979/projects/4) to plan and document all of my work.
 
-Registered users have access to a dashboard to manage their uploads and track interactions.
+### MoSCoW Prioritization
 
-### Future Features
+I chose to follow the MoSCoW Prioritization method for Happy Heath, identifying and labelling my:
 
-Advanced User Profiles:
-Add customizable profiles where users can showcase their uploaded images, favorite works, and bio information.
+- **Must Haves**: the 'required', critical components of the project. Completing my 'Must Haves' helped me to reach the MVP (Minimum Viable Product) for this project early, allowing me to develop the project further than originally planned. 
+- **Should Haves**: the components that are valuable to the project but not absolutely 'vital' at the MVP stage. The 'Must Haves' must receive priority over the 'Should Haves'.
+- **Could Haves**: these are the features that are a 'bonus' to the project, it would be nice to have them in this phase, but only if the most important issues have been completed first and time allows.
+- **Won't Haves**: the features or components that either no longer fit the project's brief or are of very low priority for this release. 
 
-### Like/Rating System:
+## User Stories
 
-Implement a feature allowing users to like or rate artwork to promote standout pieces.
+User stories and features recorded and managed on [GitHub Projects](https://github.com/users/Heath1979/projects/4)
 
-### Tagging and Categorization:
+### Visitor User Stories
 
-Enable users to tag their uploads with keywords, making it easier to search and explore specific themes.
+| User Story | Priority |
+|----------------------------------------------------------------------------------------------------------------------------|---------------|
+| As a **user**, I would like to **view a paginated list of posts** so that I can **select which post I want to view** | **MUST HAVE** |
+| As a **site user**, I would like to **click on a post** so that I can **read the full text** | **MUST HAVE** |
+| As a **user**, I would like to **check my profile page** so that I can **see my history and amend my details** | **COULD HAVE** |
+| As a **site user/admin**, I would like to **view comments on an individual post** so that I can **see feedback on the post** | **SHOULD HAVE** |
+| As a **site user**, I would like to **regisger an account** so that I can **comment on a post** | **MUST HAVE** |    
+| As a **user**, I would like to **access a blank review/blog template** so that I can **create my own post** | **WONT HAVE** | 
+| As a **user**, I would like to **comment on a post** so that I can **interact with the community** | **SHOULD HAVE** | 
+| As a **site user**, I would like to **be able to modify or delete a comment on a post** so that I can **make amendments** | **SHOULD HAVE** | 
+| As a **user**, I would like to **be able to access external links** so that I can **learn more about the topics in the posts** | **COULD HAVE** | 
+| As a **site admin**, I would like to **create, read, update, and delete posts** so that I can **can manage my blog content** | **MUST HAVE** | 
+| As a **site admin**, I would like to **create draft posts** so that I can **so that I can finish writing content at a later date** | **SHOULD HAVE** | 
+| As a **user**, I would like to **filter the posts by category** so that I can **so that I can view posts on a category I am interested in** | **COULD HAVE** | 
+| As a **user**, I would like to **filter the posts by location** so that I can **so that I can view posts based on a particular location** | **COULD HAVE** | 
+| As a **user**, I would like to **learn what the posts are about** so that I can **so that I can understand the purpose of the website** | **SHOULD HAVE** |     
+| As a **site admin**, I would like to **create and update the about page content** so that I can **keep the page updated with the most relevant information** | **MUST HAVE** |  
+| As a **site user**, I would like to **be able to contact the site admin** so that I can **make a request to collaborate or make recomendations** | **COULD HAVE** |  
+| As a **site admin**, I would like to **be able to store contact requests** so that I can **review them at a later date** | **COULD HAVE** |  
 
-### Private Messaging:
+## Scope Plane
 
-Introduce a private messaging system for users to connect and collaborate on creative projects.
+As this would be a dual learning/building project using technologies that were new to me, such as Django, SQL, Bootstrap and Cloudinary, I was cautious to maintain consistent control over the scope of the project and not let my idea grow too big. I needed to lockdown my project features early on into manageable blocks so as not to lose track of the MVP. Following Agile Planning Methodologies, I added my User Stories as issues on my [GitHub Projects](https://github.com/users/Heath1979/projects/4) to keep the flow of the project in check.
 
-### AI Art Generator Integration:
+Essential features of my project were:
+- An accessible website that fulfils user needs
+- Responsive website for users of mobile, tablet and desktop devices
+- User Authentication
+- User profile creation and editing
+- Comment feature with full CRUD functionality
+- About me details to inform the user
 
-Include an integrated AI tool to let users create art directly on the platform.
+Planning my project thoroughly from the start allowed me to identify areas of importance for MVP completion and satisfaction of assessment criteria, and to balance them with the feasibility of the features.
 
-### Enhanced Moderation:
+## Structural Plane
 
-Add tools for users and admins to report inappropriate content, ensuring a safe and welcoming community.
+From initial concept through to finished product I opted to use standard navigation elements to keep with the theme of familiarity. Bootstrap was used to help control the flexibility of the site across multiple screen sizes. 
 
-## Technologies & Languages used
+## Skeleton & Surface Planes
+
+### Wireframes
+
+The wireframes for Happy Heath were made using Balsamiq. I was sure of the structure of the site and had a general feel of how the colour scheme would work within the structure prior to beginning the project but was prepared to adapt as the project reached its conclusion. Wireframes as below have only been created for the Blog and About pages as all login and registration forms would be created by Allauth.
+
+**Mobile and Desktop views for:**
+ 
+- About
+- Paginated posts
+- Blog post
+
+<details open>
+  <summary>About Wireframe</summary>
+  <img src="documentation/wireframes/wireframe_about.png">
+</details>  
+
+<details open>
+  <summary>Paginated posts Wireframe</summary>
+  <img src="documentation/wireframes/wireframe_home.png">
+</details>
+
+<details open>
+  <summary>Blog posts Wireframe</summary>
+  <img src="documentation/wireframes/wireframe_blog.png">
+</details>
+
+### Database Schema - Entity Relationship Dagram
+
+![ERD Image](documentation/wireframes/lucid_chart.png)
+*Database Schema (ERD) for Happy Heath diaplaying relationships between feature components saved within the database*
+
+This Entity Relationship Diagram(ERD) demonstrates how each feature interacts with each other and the connected PostgreSQL Database. Using Django's User Model, and Django AllAuth to carry out all user authentication, a user_id is created when the user registers with their username and email. This allows the user to add and edit comments which will display their username. For future development users will be able to create their own blog posts and set comment approvals.
+
+The User, Post and Comments Models were inspired by the blog walkthrough by the Code Institute. This helped me to get a grasp of the templating structure and connected Python files.
+
+### Security
+
+A number of security steps were taken in this project in order to protect the user's submitted data. Unlike a strictly informative website, Happy Heath allows the user to become part of the community and interact with the posts. To meet the strict internet standards of protecting a user's data, the following processes were included in the project's development.
+
+**AllAuth**  
+
+Django AllAuth is an installable framework that takes care of the user registration and authentication process. Authentication was needed to determine when a user was registered or unregistered and it controlled who could add comments to the posts. The setup of AllAuth included:
+
+- installing it to my workspace dependencies
+- adding it to my INSTALLED_APPS in my settings.py
+- sourcing the AUTHENTICATION_BACKENDS from the AllAuth docs for my settings.py
+- adding its URL to my projects 'urls.py'
+- run database migrations to create the tables needed for AllAuth
+- (For this version of Happy Heath, to meet MVP, email and social accounts were not configured as part of the feedback/sign up options to the user.)
+  
+**Defensive Design**  
+
+Happy Heath was developed to ensure a smooth user experience, to the best of my current learning experience with Django. 
+
+- Input validation and error messages provide feedback to the user to guide them towards the desired outcome. 
+- Authentication processes control edit/delete icons to reveal them to the comment author only. 
+- Deletion of data is confirmed through an additional modal, double-checking with the user.
+- Testing and validation of features completes the process.
+
+**CSRF Tokens** 
+
+CSRF (Cross-Site Request Forgery) tokens are included in every form to help authenticate the request with the server when the form is submitted. Absence of these tokens can leave a site vulnerable to attackers who may steal a users data.
+  
+# Features
+
+## User View - Registered/Unregistered
+
+It was important to me from the beginning that Happy Heath be accessible to an unregistered user, in some capacity. I wanted the website to sell the idea of using local businesses to a new user quickly by immediately inviting them into the community through the blogs and comments sections. The following is a breakdown of the site's accessibility for registered/unregistered users:
+
+| Feature | Unregistered User | Registered, Logged-In User |
+|-----------|-------------------|-----------------|
+| About page | Visible | Visible |
+| Paginated blogs | Visible | Visible |
+| Blog post | Visible | Visible |
+| Comments | Visible but not able to add/amend | Visible with full feature interaction |
+
+## CRUD Functionality
+
+Users are able to Create, Read, Update and Delete their shared information on Happy Heath. Some features make full CRUD functionality available, whilst others present the necessary options only. Here is my CRUD breakdown for Happy Heath:
+
+| Feature | Create | Read | Update | Delete |
+|---------|--------|------|--------|--------|
+| Profile | Created upon registration | No | No | Full profile deletion is currently only available to Admin upon user account deletion |
+| Posts | By admin only | Yes | By admin only | By admin only |
+| Comments | Yes for registered users | Yes | Yes for registered users | Yes for registered users |
+
+## Feature showcase
+
+*For features showcase screenshots were taken on laptop*
+
+**Header/Navigation & Footer**
+
+<details open>
+  <summary>Header & Navigation - all users (laptop)</summary>
+  <img src="documentation/final_views/">
+</details>  
+
+<details open>
+  <summary>Header & Navigation - all users (mobile)</summary>
+  <img src="documentation/final_views/">
+</details>  
+
+<details open>
+  <summary>Footer - all users</summary>
+  <img src="documentation/final_views/">
+</details>  
+
+**About Page**
+
+<details open>
+  <summary>About page - all users</summary>
+  <img src="documentation/final_views/">
+</details> 
+
+**Paginated Posts**
+
+<details open>
+  <summary>Paginated posts - all users</summary>
+  <img src="documentation/final_views/">
+</details> 
+
+**Blog Post**
+
+<details open>
+  <summary>Paginated posts - all users</summary>
+  <img src="documentation/final_views/">
+</details>
+
+**Comments**
+
+<details open>
+  <summary>Comments - all users</summary>
+  <img src="documentation/final_views/">
+</details>
+
+**Registration/Sign Up**
+
+<details open>
+  <summary>Registration - all users</summary>
+  <img src="documentation/final_views/">
+</details>
+
+**Sign In**
+
+<details open>
+  <summary>Sign in - all users</summary>
+  <img src="documentation/final_views/">
+</details>
+
+**Sign Out**
+
+<details open>
+  <summary>Sign out - all users</summary>
+  <img src="documentation/final_views/">
+</details>
+
+**Admin Panel**
+
+<details open>
+  <summary>Admin panel</summary>
+  <img src="documentation/final_views/">
+</details>
+
+## Future Features
+
+- **Social account login**: Allowing popular social account login to the Happy Heath site will speed up the registration process.
+- **Business pages**: Allow for businesses to sign up and advertise. Create a safe space for interaction between businesses and customers.
+- **Member to business contact**: Customers can send direct messages to businesses through the website.
+- **Add picture gallery to posts**: Allows the community to post images that will support the good work of the business that is the topic of the post.
+- **User profile**: Users can view a profile and amend as required.
+- **Notifications**: Users receive some form of notification when new posts are created. Notifications can be set in a user profile.
+
+# Technologies & Languages used
 
 - HTML
 - CSS
@@ -100,225 +335,6 @@ Add tools for users and admins to report inappropriate content, ensuring a safe 
 - [Heroku](https://www.heroku.com) was used to host the FreeFido application.
 - [WAVE](https://wave.webaim.org/) to evaluate the accessibility of the site.
 - PostgreSQL database required to collect and recall users data supplied by the Code Institute.
-
-## User Experience
-
-The Creative Star platform has been designed with a user-first approach, ensuring an intuitive and engaging experience for all visitors. By focusing on accessibility, responsiveness, and simplicity, the platform provides a seamless journey from registration to sharing and interacting with art.
-
-## User Stories
-https://github.com/users/Cosh66/projects/8/views/1
-
-### General Users
-As a user, I want to browse a gallery of AI-generated images to find inspiration.
-As a user, I want to leave comments on artwork to engage with the community.
-As a user, I want a responsive design so I can access the platform from any device.
-
-### Registered Users
-As a registered user, I want to upload my AI-generated images to share my creativity.
-As a registered user, I want to edit or delete my uploads for better control over my content.
-As a registered user, I want to view and manage my uploads from a personalized dashboard.
-
-### Admin Users
-As an admin, I want to manage user uploads and comments to ensure a safe environment.
-As an admin, I want to access a robust backend system to efficiently moderate content.
-
-### Design Principles
-Simplicity:
-The interface is designed to minimize complexity, focusing on ease of use for users of all technical backgrounds.
-
-### Accessibility:
-The platform adheres to best practices for web accessibility, ensuring inclusivity for all users, including those with disabilities.
-
-### Responsiveness:
-The site is optimized for devices of all sizes, from desktops to tablets and smartphones.
-
-### Consistency:
-A consistent visual language is maintained throughout the platform, offering a cohesive user experience.
-
-### Interactive Elements
-Image Upload: Users are guided through a simple process to upload their artwork.
-Comments: A commenting feature allows users to interact and discuss artwork.
-Navigation: Clear and intuitive navigation ensures easy access to key features.
-
-## Font
-
-Creative Star uses modern, readable, and visually appealing fonts to enhance the overall user experience and align with the platform's creative theme. The selected font styles ensure clarity and aesthetics across all devices and screen sizes.
-
-### Primary Font
-
-Font Name: [Montserrat, Roboto,]
-Reason for Choice:
-Clean and professional look.
-Excellent readability for both small and large text.
-Complements the creative and modern theme of the platform.
-
-### Fallback Fonts
-
-In case the primary font is unavailable, the following fallback fonts are used:
-Sans-serif family: Ensures a clean and consistent appearance.
-System fonts: Ensures compatibility across various browsers and devices.
-
-### Font Usage
-
-Headings: The primary font is used for headings to ensure a bold and striking appearance.
-Body Text: The primary font is also applied to body text for a cohesive design.
-Special Elements: Font weight and size variations are utilized to emphasize buttons, labels, and interactive elements. 
-
-### Web Font Integration
-
-<link href="https://fonts.googleapis.com/css2?family=FontName:wght@400;700&display=swap" rel="stylesheet">
-
-### Project Purpose
-
-The primary purpose of Creative Star is to create a platform that enables users to:
-
-Showcase their creativity through AI-generated art.
-Connect with a like-minded community of art enthusiasts.
-Receive feedback and foster discussions through interactive features like comments.
-By addressing these needs, the platform aims to bridge the gap between technology and artistic expression.
-
-## Strategy Plane
-
-The Strategy Plane outlines the high-level objectives and goals of the Creative Star project. It focuses on understanding user needs, defining the purpose of the platform, and ensuring alignment with long-term goals.
-
-### Project Purpose
-
-The primary purpose of Creative Star is to create a platform that enables users to:
-
-Showcase their creativity through AI-generated art.
-Connect with a like-minded community of art enthusiasts.
-Receive feedback and foster discussions through interactive features like comments.
-By addressing these needs, the platform aims to bridge the gap between technology and artistic expression.
-
-### Target Audience
-
-Digital Artists: Professionals and hobbyists exploring AI-generated art.
-AI Enthusiasts: Individuals curious about the potential of AI in creative fields.
-General Art Lovers: Users who appreciate innovative and diverse artistic styles.
-
-### User Goals
-
-Discover and explore unique AI-generated artwork.
-Easily upload and share their own creations.
-Interact with other users through comments and discussions.
-Enjoy a seamless and responsive platform across devices.
-
-### Business Goals
-
-Build an engaging platform that grows a community of loyal users.
-Position Creative Star as a leader in AI-art showcase platforms.
-Introduce future monetization opportunities, such as premium memberships or integrated AI tools.
-Ensure scalability and adaptability for incorporating new features over time.
-
-### Core Strategy
-
-User-Centric Design: Every feature and decision is guided by user needs and preferences.
-Community Building: Encourage active participation through interactive and social elements.
-Innovation and Creativity: Leverage cutting-edge technologies to provide unique and inspiring experiences.
-Sustainability: Develop the platform with scalability and long-term usability in mind.
-
-## Scope Plane
-
-The Scope Plane defines the specific features and functionality of Creative Star that will help achieve the goals outlined in the Strategy Plane. It includes the features planned for the initial release and outlines potential future enhancements.
-
-### AI Image Upload:
-
-Allow users to upload and showcase their AI-generated artwork.
-Secure image storage using Cloudinary.
-
-### User Registration and Authentication:
-
-Enable users to create accounts, log in, and log out securely.
-Provide a personalized experience for registered users.
-
-### Commenting System:
-
-Allow users to leave comments on images to foster community interaction.
-Include a feature for users to edit or delete their comments.
-
-### Gallery View:
-
-Display all uploaded images in an organized and visually appealing format.
-
-### Responsive Design:
-
-Ensure the platform is fully functional on all devices, including desktops, tablets, and mobile phones.
-
-### Admin Panel:
-
-Provide admin-level controls for managing uploads and comments to maintain a safe and respectful community.
-
-## Enhanced Features (Future Development)
-
-### Advanced User Profiles:
-
-Allow users to customize their profiles with a bio, profile picture, and collection of favorite uploads.
-
-### Search and Filtering:
-
-Enable users to search and filter images by tags, categories, or keywords.
-
-### Like/Rating System:
-
-Introduce a feature to rate or like artwork, highlighting popular creations.
-
-### Private Messaging:
-
-Allow users to communicate directly for collaboration and feedback.
-
-### AI Art Generator Integration:
-
-Provide users with tools to generate AI art directly within the platform.
-
-### Monetization Options:
-
-Explore premium memberships or in-app purchases for advanced tools and features.
-
-
-## Wireframes
-
-### Homepage Wireframe
-![Homepage](https://github.com/user-attachments/assets/6975845e-4fd3-4444-8ad7-a21a401a92f8)
-
-### Tablet Wireframe
-![Tablet-Veiw](https://github.com/user-attachments/assets/2fee1535-2ffc-4b4d-9b65-56d287bf5c9d)
-
-### Mobile Wireframe
-![Mobile-Veiw](https://github.com/user-attachments/assets/60de1c51-61e7-4702-b5be-dd7af2276799)
-
-
-### Upload Page Wireframe
-![Upload Gallery View](https://github.com/user-attachments/assets/399e0b50-2897-4223-b385-168a7d60a3ba)
-
-### Hamburger menu
-![Hamburger-Menu](https://github.com/user-attachments/assets/4a06cca3-7c58-4c18-88bd-b078fbdbecdc)
-
-
-## Security
-
-A number of security steps were taken in this project in order to protect the user's submitted data. Unlike a strictly informative website, Creative Star allows the user to become part of the community and interact with the comments. To meet the strict internet standards of protecting a user's data, the following processes were included in the project's development.
-
-### AllAuth  
-
-Django AllAuth is an installable framework that takes care of the user registration and authentication process. Authentication was needed to determine when a user was registered or unregistered and it controlled who could add comments to the posts. The setup of AllAuth included:
-
-- installing it to my workspace dependencies
-- adding it to my INSTALLED_APPS in my settings.py
-- sourcing the AUTHENTICATION_BACKENDS from the AllAuth docs for my settings.py
-- adding its URL to my projects 'urls.py'
-- run database migrations to create the tables needed for AllAuth
-  
-## Features
-
-## User View - Registered/Unregistered
-
-It was important to me from the beginning that Creative Star be accessible to an unregistered user, in some capacity. I wanted the website to sell the idea of using About to a new user quickly by immediately inviting them into the community through the Uploads and comments sections. The following is a breakdown of the site's accessibility for registered/unregistered users:
-
-| Feature | Unregistered User | Registered, Logged-In User |
-|-----------|-------------------|-----------------|
-| About page | Visible | Visible |
-| Uplosd Images | Not visable | Visible |
-| Comments | Not visable | Visible with full feature interaction |
 
 ## Libraries & Frameworks
 
@@ -505,48 +521,26 @@ To start the deployment process , please follow the below steps:
 
 ## Credits
 
-The development of Creative Star was made possible with the help of various resources, tools, and contributors. Below are the acknowledgments:
+### **Content References**
 
-## Code and Tutorials
+All content written for this site is purely for educational purposes. Actual businesses were used as the basis for each blog post.
+- [Facebook](https://www.facebook.com) for Facebook business profiles.
+- [YouTube](https://www.youtube.com) for supporting videos on the advertised businesses. Credit to Visit Fylde Coast, 
 
-Django Documentation: For providing in-depth knowledge and guidance on Django development.
-Stack Overflow: For troubleshooting issues and finding solutions to common programming challenges.
-Code Institute: For the course materials and support that formed the foundation of this project.
+### **Media References**
+- [Pexels](https://www.pexels.com/) for images used on this site. credit to Rodrii Sabino.
+- [Notionavenue](https://www.notionavenue.co/) for hex color code for comments delete button.
+- [Coolers](https://coolors.co/) for color generator used for pallette for the site.
+- [AWeber](https://blog.aweber.com/) for advice on fonts used for a blog site.
 
-### Design and Wireframes
+### **Code**
 
-Figma: Used to create the wireframes for the platform, enabling clear visualization of the design and user flow.
+The following sites complemented my learning for this project alongside the [Code Institute's](https://codeinstitute.net/ie/) learning content.
 
-## Media
+- [Geeksforgeeks](https://www.geeksforgeeks.org/) for setting a plaveholder in a URLField
+- [W3Schools](https://www.w3schools.com/) for advice on resizing objects in relation to the images on this site
+- [KenBro Tech](https://www.youtube.com/@KenBroTech) for tutorials on creating a search function.
+- [Dee Mc](https://www.youtube.com/@IonaFrisbee) for easy to follow Django walkthrough.
 
-Cloudinary: For securely storing and serving uploaded images.
-Placeholder images for testing and demonstration were sourced from publicly available free image repositories, if applicable.
-
-## Testing and Debugging
-
-GitHub Community: For resources and discussions that helped during debugging and testing phases.
-Peers and Mentors: Special thanks to those who provided valuable feedback and support during development.
-
-## Inspiration
-
-The concept of Creative Star was inspired by the growing interest in AI-generated art and the need for a platform to share and discuss these creations.
-
-## Acknowledgments
-
-I would like to express my sincere gratitude to Code Institute for providing the learning resources, mentorship, and guidance that enabled me to develop this project. Their structured curriculum and expert instructors have been invaluable in helping me understand and apply full-stack development principles.
-
-Special thanks to my mentor Amy, Coding coaches John and Mark, and the student support of my team for their encouragement, insights, and constructive feedback throughout this journey.
-
-I would also like to acknowledge the supportive community of fellow students who shared knowledge, challenges, and motivation, making the learning experience even more enriching.
-
-Lastly, I want to thank my friends and family for their patience, encouragement, and support while I dedicated time to building this project.
-
-
-
-
-
-
-
-
-
+## Acknowledgements
 
