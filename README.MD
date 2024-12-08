@@ -288,6 +288,9 @@ Explore premium memberships or in-app purchases for advanced tools and features.
 
 
 ### Upload Page Wireframe
+![Upload Gallery View](https://github.com/user-attachments/assets/399e0b50-2897-4223-b385-168a7d60a3ba)
+
+### Hamburger menu
 
 
 ## Security
