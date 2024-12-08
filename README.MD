@@ -495,7 +495,7 @@ To start the deployment process , please follow the below steps:
 
 The development of Creative Star was made possible with the help of various resources, tools, and contributors. Below are the acknowledgments:
 
-### Code and Tutorials
+## Code and Tutorials
 
 Django Documentation: For providing in-depth knowledge and guidance on Django development.
 Stack Overflow: For troubleshooting issues and finding solutions to common programming challenges.
@@ -505,33 +505,33 @@ Code Institute: For the course materials and support that formed the foundation 
 
 Figma: Used to create the wireframes for the platform, enabling clear visualization of the design and user flow.
 
-### Media
+## Media
 
 Cloudinary: For securely storing and serving uploaded images.
 Placeholder images for testing and demonstration were sourced from publicly available free image repositories, if applicable.
 
-### Testing and Debugging
+## Testing and Debugging
 
 GitHub Community: For resources and discussions that helped during debugging and testing phases.
 Peers and Mentors: Special thanks to those who provided valuable feedback and support during development.
 
-### Inspiration
+## Inspiration
 
 The concept of Creative Star was inspired by the growing interest in AI-generated art and the need for a platform to share and discuss these creations.
 
 ## Special Thanks
 
-#### To my Family: For their encouragement and support during the development process. 
+### To my Family: For their encouragement and support during the development process. 
 
-####  Thank you, Sazzel and Joanne: your helping me with the problems I encountered at the beginning of my project.
+###  Thank you, Sazzel and Joanne: your helping me with the problems I encountered at the beginning of my project.
 
-#### Thank you for my team support: (when I was ready to quit)
+### Thank you for my team support: (when I was ready to quit)
 
-#### Thank you to Amy my fisilator: (Amazing cool beans, Amy is a keeper)
+### Thank you to Amy my fisilator: (Amazing cool beans, Amy is a keeper) 
 
-#### ChatGPT (by OpenAI): For assisting with brainstorming ideas, crafting and helping me with the README, and providing guidance throughout the development of Creative Star.
+### ChatGPT (by OpenAI): For assisting with brainstorming ideas, crafting and helping me with the README, and providing guidance throughout the development of Creative Star.
 
-#### Thank you to John and Mark, for helping me to unbreak my code!
+### Thank you to John and Mark, for helping me to unbreak my code!
 
 
 
