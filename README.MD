@@ -376,6 +376,10 @@ Resolution: Fixed by updating the form validation logic.
 Bug: Image uploads failing for large files.
 Resolution: Configured Cloudinary to handle larger file sizes.
 
+### Unresoved Bugs
+
+
+
 ### User Feedback
 
 Feedback from users was collected and incorporated during the testing phase to improve usability and performance.
