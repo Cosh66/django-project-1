@@ -278,6 +278,7 @@ Explore premium memberships or in-app purchases for advanced tools and features.
 ## Wireframes
 
 ### Homepage Wireframe
+![Homepage](https://github.com/user-attachments/assets/6975845e-4fd3-4444-8ad7-a21a401a92f8)
 
 ### Tablet Wireframe
 
