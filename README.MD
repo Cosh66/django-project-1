@@ -533,19 +533,17 @@ Peers and Mentors: Special thanks to those who provided valuable feedback and su
 
 The concept of Creative Star was inspired by the growing interest in AI-generated art and the need for a platform to share and discuss these creations.
 
-## Special Thanks
+## Acknowledgments
 
-To my Family: For their encouragement and support during the development process. 
+I would like to express my sincere gratitude to Code Institute for providing the learning resources, mentorship, and guidance that enabled me to develop this project. Their structured curriculum and expert instructors have been invaluable in helping me understand and apply full-stack development principles.
 
-Thank you, Sazzel and Joanne: your helping me with the problems I encountered at the beginning of my project.
+Special thanks to my mentor Amy, Coding coaches John and Mark, and the student support of my team for their encouragement, insights, and constructive feedback throughout this journey.
 
-Thank you for my team support: (when I was ready to quit)
+I would also like to acknowledge the supportive community of fellow students who shared knowledge, challenges, and motivation, making the learning experience even more enriching.
 
-Thank you to Amy my fisilator: (Amazing cool beans, Amy is a keeper) 
+Lastly, I want to thank my friends and family for their patience, encouragement, and support while I dedicated time to building this project.
 
-ChatGPT (by OpenAI): For assisting with brainstorming ideas, crafting and helping me with the README, and providing guidance throughout the development of Creative Star.
 
-Thank you to John and Mark, for helping me to unbreak my code!
 
 
 
