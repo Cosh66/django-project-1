@@ -95,11 +95,10 @@ Add tools for users and admins to report inappropriate content, ensuring a safe 
 - Python
 - [Github](https://www.github.com) used for online storage of codebase and Projects tool.
 - [Gitpod](https://www.gitpod.io) as an online, cloud-based IDE for development.
-- Blasamiq for design planning and wireframes.
+- [Figma](https://www.figma.com/) planning and wireframes.
 - [Cloudinary](https://cloudinary.com/) was used for cloud media storage of user uploaded images.
 - [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
 - [Heroku](https://www.heroku.com) was used to host the FreeFido application.
-- [WAVE](https://wave.webaim.org/) to evaluate the accessibility of the site.
 - PostgreSQL database required to collect and recall users data supplied by the Code Institute.
 
 ## User Experience
