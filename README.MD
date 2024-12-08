@@ -284,6 +284,7 @@ Explore premium memberships or in-app purchases for advanced tools and features.
 ![Tablet-Veiw](https://github.com/user-attachments/assets/2fee1535-2ffc-4b4d-9b65-56d287bf5c9d)
 
 ### Mobile Wireframe
+![Mobile-Veiw](https://github.com/user-attachments/assets/60de1c51-61e7-4702-b5be-dd7af2276799)
 
 
 ### Upload Page Wireframe
