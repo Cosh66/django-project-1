@@ -333,6 +333,7 @@ It was important to me from the beginning that Creative Star be accessible to an
 ## Tools & Programs
 
 - [Convertio](https://convertio.co/) for file conversion to PNG, WEBP. 
+- [ChatGPT](https://chatgpt.com/) for breaking down Python concepts and models and explaining the relationships, and helping with JavaScript on search field.
 - [Lucid](https://lucidchart.com) for creating the ERD.
 - [Perplexity AI](https://www.perplexity.ai/) for breaking down Python concepts and models and explaining the relationships, and helping with JavaScript on search field.
 - [LogoDesign](https://logodesign.ai/) for generating brand logo to be used as the Favicon.
