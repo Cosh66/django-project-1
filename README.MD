@@ -537,7 +537,7 @@ The concept of Creative Star was inspired by the growing interest in AI-generate
 
 I would like to express my sincere gratitude to Code Institute for providing the learning resources, mentorship, and guidance that enabled me to develop this project. Their structured curriculum and expert instructors have been invaluable in helping me understand and apply full-stack development principles.
 
-Special thanks to my mentor Amy, Coding coaches John and Mark, and the student support of my team for their encouragement, insights, and constructive feedback throughout this journey.
+Special thanks to my mentor Amy (Cool Beans), coding coaches John and Mark, and the student support of my team for their encouragement, insights, and constructive feedback throughout this journey.
 
 I would also like to acknowledge the supportive community of fellow students who shared knowledge, challenges, and motivation, making the learning experience even more enriching.
 
