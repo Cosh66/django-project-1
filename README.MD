@@ -523,6 +523,7 @@ Figma: Used to create the wireframes for the platform, enabling clear visualizat
 Cloudinary: For securely storing and serving uploaded images.
 Placeholder images for testing and demonstration were sourced from publicly available free image repositories, if applicable.
 
+
 ## Testing and Debugging
 
 GitHub Community: For resources and discussions that helped during debugging and testing phases.
