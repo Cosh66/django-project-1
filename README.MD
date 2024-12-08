@@ -378,7 +378,7 @@ Resolution: Configured Cloudinary to handle larger file sizes.
 
 ### Unresoved Bugs
 
-
+![Bugs](https://github.com/user-attachments/assets/a76a9051-f289-40ce-a0e4-5e5890954027)
 
 ### User Feedback
 
