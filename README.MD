@@ -107,6 +107,7 @@ Add tools for users and admins to report inappropriate content, ensuring a safe 
 The Creative Star platform has been designed with a user-first approach, ensuring an intuitive and engaging experience for all visitors. By focusing on accessibility, responsiveness, and simplicity, the platform provides a seamless journey from registration to sharing and interacting with art.
 
 ## User Stories
+https://github.com/users/Cosh66/projects/8/views/1
 
 ### General Users
 As a user, I want to browse a gallery of AI-generated images to find inspiration.
