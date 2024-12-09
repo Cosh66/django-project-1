@@ -2,7 +2,7 @@ import os
 
 os.environ.setdefault(
     "DATABASE_URL",
-    "postgresql://uspo8gggse3:P5Z5pRhSYh8o@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/romp_vegan_hut_429921"
+    "postgresql://neondb_owner:l13uWGsyePbM@ep-icy-fog-a2fhowul.eu-central-1.aws.neon.tech/romp_vegan_hut_429921"
 )
 
 # Django Secret Key

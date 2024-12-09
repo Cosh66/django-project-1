@@ -33,7 +33,8 @@ def upload_image(request):
             uploaded_image = form.save(commit=False)
             uploaded_image.author = request.user
             uploaded_image.save()
-            messages.success(request, f"Image uploaded successfully by {request.user.username}.")
+            messages.success(
+                request, f"Image uploaded successfully by {request.user.username}.")
             return redirect('image_gallery')
     else:
         form = UploadedImageForm()
@@ -57,5 +58,7 @@ def image_gallery(request):
     else:
         form = CommentForm()
     return render(request, 'blog/image_gallery.html', {'images': images, 'form': form})
+
+# Add a blank line at the end of the file
 
 
