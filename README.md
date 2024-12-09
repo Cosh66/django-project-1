@@ -397,7 +397,7 @@ Resolution: Configured Cloudinary to handle larger file sizes.
 ![Bugs](https://github.com/user-attachments/assets/a76a9051-f289-40ce-a0e4-5e5890954027)
 ![Upload images validator](https://github.com/user-attachments/assets/d62c45d8-5fcc-48de-93c6-02e8b3853371)
 
-### User Feedback
+## User Feedback
 
 Feedback from users was collected and incorporated during the testing phase to improve usability and performance.
 
