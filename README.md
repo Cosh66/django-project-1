@@ -386,11 +386,19 @@ Resolution: Configured Cloudinary to handle larger file sizes.
 
 ### No Bugs
 
-
+### CSS
 ![CSS validator](https://github.com/user-attachments/assets/47f8c91c-b287-4d53-8239-0946192ec29e)
+
+### Sign Out
 ![Sign out validator](https://github.com/user-attachments/assets/473a79a3-ba34-489f-9bb1-45e48fdab3f9)
+
+### Python
 ![Python validator](https://github.com/user-attachments/assets/486b66d3-7024-492f-aa9e-2cc16d7409a5)
+
+### About
 ![About validator](https://github.com/user-attachments/assets/7597aff8-b962-4d0d-85fb-881509b0050a)
+
+### Upload Images
 ![Upload Image validator!](https://github.com/user-attachments/assets/d15cff48-640d-4808-8852-0e699f9fd210)
 
 ### Unresolved Bugs
