@@ -18,7 +18,7 @@ Whether you're an experienced digital artist or someone exploring the possibilit
 Image Uploads: Users can easily upload AI-generated images to showcase their creativity.
 Commenting System: Visitors and members can engage with the artwork by leaving comments, fostering interaction and feedback.
 Community-Centric Design: The platform is built to encourage connections among users with shared interests in AI and digital art.
-User-Friendly Interface: A simple, intuitive design ensures an accessible experience for all users, regardless of technical expertise.
+User-Friendly Interface: A simple, intuitive design ensures an accessible experience for all users, regardless of technical expertise. 
 
 ### Creative Star is designed for:
 
